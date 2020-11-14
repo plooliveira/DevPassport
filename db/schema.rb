@@ -10,10 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_14_120354) do
+ActiveRecord::Schema.define(version: 2020_11_14_182027) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "code_reviews", force: :cascade do |t|
+    t.bigint "stamp_id", null: false
+    t.bigint "user_id", null: false
+    t.float "reviewer_grade"
+    t.string "test_answer"
+    t.text "reviewer_feedback"
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["stamp_id"], name: "index_code_reviews_on_stamp_id"
+    t.index ["user_id"], name: "index_code_reviews_on_user_id"
+  end
+
+  create_table "stamps", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "test_id", null: false
+    t.date "issuing_date"
+    t.date "expiration_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["test_id"], name: "index_stamps_on_test_id"
+    t.index ["user_id"], name: "index_stamps_on_user_id"
+  end
+
+  create_table "tests", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "title"
+    t.text "description"
+    t.bigint "visa_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_tests_on_user_id"
+    t.index ["visa_id"], name: "index_tests_on_visa_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +63,17 @@ ActiveRecord::Schema.define(version: 2020_11_14_120354) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "visas", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "code_reviews", "stamps"
+  add_foreign_key "code_reviews", "users"
+  add_foreign_key "stamps", "tests"
+  add_foreign_key "stamps", "users"
+  add_foreign_key "tests", "users"
+  add_foreign_key "tests", "visas"
 end
