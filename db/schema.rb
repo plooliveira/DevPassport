@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_14_182027) do
+ActiveRecord::Schema.define(version: 2020_11_14_190437) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(version: 2020_11_14_182027) do
   create_table "code_reviews", force: :cascade do |t|
     t.bigint "stamp_id", null: false
     t.bigint "user_id", null: false
-    t.float "reviewer_grade"
     t.string "test_answer"
     t.text "reviewer_feedback"
     t.date "start_date"
     t.date "end_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "status"
     t.index ["stamp_id"], name: "index_code_reviews_on_stamp_id"
     t.index ["user_id"], name: "index_code_reviews_on_user_id"
   end
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2020_11_14_182027) do
     t.bigint "visa_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "seniority"
     t.index ["user_id"], name: "index_tests_on_user_id"
     t.index ["visa_id"], name: "index_tests_on_visa_id"
   end
