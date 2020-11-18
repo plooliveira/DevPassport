@@ -1,6 +1,7 @@
 class VisasController < ApplicationController
 
+
   def index
-    @visas = Visa.all
+    @visas = policy_scope(Visa)
   end
 end
