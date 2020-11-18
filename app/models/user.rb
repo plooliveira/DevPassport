@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   # has many stamps through tests
   # has many stamps through code_reviews
+
 end
