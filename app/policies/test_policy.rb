@@ -1,22 +1,34 @@
 class TestPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-      scope.all
+      # scope => Test
+      scope.where(user: user)
     end
 
     def new?
     end
 
     def create?
-      current_user.role == 3
+      user.role == 3
     end
 
     def edit?
-      user = current_user
+      is_company?
+    end
+
+    def update?
+      is_company?
     end
 
     def destroy?
-      user = current_user
+      is_company?
     end
+
+    private
+
+    def is_company?
+      # user => current_user
+      # record => @test
+      record.user == user
   end
 end
