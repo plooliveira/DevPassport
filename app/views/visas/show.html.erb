@@ -1,0 +1,14 @@
+  <%= link_to "Back", visas_path %>
+
+
+  <% @visa.tests.each do |test| %>
+    <h2><%= test.title %></h2>
+    <ul>
+      <li>Author: <%= test.user.name  %></li>
+      <li>Description: <%= test.description %></li>
+      <li>Seniority: <%= test.seniority %></li>
+    </ul>
+  <% end %>
+
+  <%= link_to "Comprar", visas_path, class:"btn btn-primary" %>
+

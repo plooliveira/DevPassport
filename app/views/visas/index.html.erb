@@ -2,17 +2,9 @@
 
 <% @visas.each do |visa| %>
   <h2>
-    <%= visa.title %>
+    <%= link_to visa.title, visa_path(visa) %>
   </h2>
   <h3>
     <%= visa.description %>
   </h3>
-  <% visa.tests.each do |test| %>
-    <ul>
-      <li>Author: test.user.name (corrigir após migration de users)</li>
-      <li>Title: <%= test.title %></li>
-      <li>Description: <%= test.description %></li>
-      <li>Seniority: <%= test.seniority %></li>
-    </ul>
-  <% end %>
 <% end %>
