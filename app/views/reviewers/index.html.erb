@@ -1,0 +1,9 @@
+<div class="container">
+  <ul>
+    <%@reviewers.each do |reviewer|%>
+    <li>
+      <%= link_to  "#{reviewer.email}" , reviewer_path(reviewer) %>
+    </li>
+    <%end%>
+  </ul>
+</div>
