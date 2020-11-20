@@ -1,0 +1,11 @@
+<h1>Let's pay for your test</h1>
+
+<%= @stamp.test.title %>
+
+<form action="/stamps/<%= @stamp.id %>" method="get">
+  <label for="cc_number">Credit Card:</label><br>
+  <input type="text" name="cc_number"><br>
+  <label for="cc_name">Name:</label><br>
+  <input type="text" name="cc_name">
+  <input type="submit" value="Pay" class="btn btn-primary">
+</form>
