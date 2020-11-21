@@ -1,35 +1,53 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+## user.role = 1 ---> usuário
+## user.role = 2 ---> revisor
+## user.role = 3 ---> empresa
 
 
-# visa_front = Visa.create(title: "Front-End", description: "Um visto de front-end muito legal e bacana")
-# visa_back = Visa.create(title: "Back-End", description: "Um visto de back-end muito legal e bacana")
+User.create(email: "usuario1@devpassport.com", role: 1, name: "Usuário1 do DevPassport", cpf: "03208065108", password: "devpassport")
+User.create(email: "usuario2@devpassport.com", role: 1, name: "Usuário2 do DevPassport", cpf: "03208065108", password: "devpassport")
+User.create(email: "usuario3@devpassport.com", role: 1, name: "Usuário3 do DevPassport", cpf: "03208065108", password: "devpassport")
 
-# test_front_nubank = Test.new()
-# test_front_nubank.user = User.find(1)
-# test_front_nubank.title = "Teste de Front do Nubank"
-# test_front_nubank.description = "Um teste muito muito difícil"
-# test_front_nubank.visa = Visa.find(1)
-# test_front_nubank.seniority = "Junior"
-# test_front_nubank.save
+User.create(email: "revisor1@devpassport.com", role: 2, name: "Revisor1 do DevPassport", cpf: "03208065108", password: "devpassport")
+User.create(email: "revisor2@devpassport.com", role: 2, name: "Revisor2 do DevPassport", cpf: "03208065108", password: "devpassport")
+User.create(email: "revisor3@devpassport.com", role: 2, name: "Revisor3 do DevPassport", cpf: "03208065108", password: "devpassport")
 
-# test_back_nubank = Test.new()
-# test_back_nubank.user = User.find(1)
-# test_back_nubank.title = "Teste de Back do Nubank"
-# test_back_nubank.description = "Um teste nao tão difícil"
-# test_back_nubank.visa = Visa.find(2)
-# test_back_nubank.seniority = "Pleno"
-# test_back_nubank.save
+User.create(email: "nubank@devpassport.com", role: 3, name: "Nubank", cpf: "0", password: "devpassport")
+User.create(email: "stone@devpassport.com", role: 3, name: "Stone", cpf: "0", password: "devpassport")
 
-# reviewer = User.new
-# reviwer.email = "paulo@github.com"
-# reviewer.role = 2
-# reviewer.name = "Paulo"
-# reviewer.cpf = "03208065108"
-# reviewer.password = "admin1"
-# reviewer.save
+Visa.create(title: "Front-End", description: "Um visto de front-end muito legal e bacana")
+Visa.create(title: "Back-End", description: "Um visto de back-end muito legal e bacana")
+Visa.create(title: "Full Stack", description: "Um visto full stack muito legal e bacana mesmo")
+
+Test.create(
+  title: "Teste de Front do Nubank",
+  description: "Um teste muito muito difícil",
+  user: User.where(name: "Nubank").first,
+  visa: Visa.where(title: "Front-End").first,
+  seniority: "Junior"
+)
+
+Test.create(
+  title: "Teste de Back do Nubank",
+  description: "Um teste muito muito difícil",
+  user: User.where(name: "Nubank").first,
+  visa: Visa.where(title: "Back-End").first,
+  seniority: "Pleno"
+)
+
+Test.create(
+  title: "Teste de Front da Stone",
+  description: "Um teste muito muito difícil",
+  user: User.where(name: "Stone").first,
+  visa: Visa.where(title: "Front-End").first,
+  seniority: "Junior"
+)
+
+Test.create(
+  title: "Teste de Back da Stone",
+  description: "Um teste muito muito difícil",
+  user: User.where(name: "Stone").first,
+  visa: Visa.where(title: "Back-End").first,
+  seniority: "Pleno"
+)
+
+

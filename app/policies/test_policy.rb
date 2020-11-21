@@ -9,6 +9,7 @@ class TestPolicy < ApplicationPolicy
     end
 
     def new?
+      true
     end
 
     def create?
@@ -31,7 +32,7 @@ class TestPolicy < ApplicationPolicy
     def is_company?
       # user => current_user
       # record => @test
-      record.user == user
+      user.role = 3
     end
   end
 

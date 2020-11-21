@@ -6,7 +6,7 @@ before_action :set_test, only: [:edit, :update, :destroy]
   end
 
   def new
-    @test = current_user.test.new
+    @test = Test.new
     authorize @test
   end
 
