@@ -25,3 +25,11 @@
 # test_back_nubank.visa = Visa.find(2)
 # test_back_nubank.seniority = "Pleno"
 # test_back_nubank.save
+
+# reviewer = User.new
+# reviwer.email = "paulo@github.com"
+# reviewer.role = 2
+# reviewer.name = "Paulo"
+# reviewer.cpf = "03208065108"
+# reviewer.password = "admin1"
+# reviewer.save
