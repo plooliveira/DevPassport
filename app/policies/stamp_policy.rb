@@ -17,6 +17,11 @@ class StampPolicy < ApplicationPolicy
     record.user == user
   end
 
+  def edit?
+    raise
+    record.user == user
+  end
+
   def check_payment?
     record.user == user
   end

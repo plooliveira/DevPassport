@@ -4,6 +4,6 @@
   <%= @tests.each do |test| %>
   <li>  <%= test.title %>   </li>
   <td>  <%= link_to "Edit", edit_test_path(test) %> </td>
-  <td>  <%= link_to "Delete test", test_path, method: :delete %> </td>
+  <td>  <%= link_to "Delete", test_path, method: :delete %> </td>
   <% end %>
 </tr>
