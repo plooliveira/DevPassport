@@ -1,6 +1,6 @@
-## user.role = 1 ---> usuário
-## user.role = 2 ---> revisor
-## user.role = 3 ---> empresa
+# ## user.role = 1 ---> usuário
+# ## user.role = 2 ---> revisor
+# ## user.role = 3 ---> empresa
 
 
 # User.create(email: "usuario1@devpassport.com", role: 1, name: "Usuário1 do DevPassport", cpf: "03208065108", password: "devpassport")
@@ -49,10 +49,3 @@
 #   visa: Visa.where(title: "Back-End").first,
 #   seniority: "Pleno"
 # )
-
-# Technology.create(name: "React")
-# Technology.create(name: "Vue")
-# Technology.create(name: "Rails")
-# Technology.create(name: "NodeJS")
-
-
