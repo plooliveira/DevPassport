@@ -1,0 +1,12 @@
+<h1>Edit your stamp:</h1>
+
+<%= form_for(@stamp) do |f| %>
+<%= f.label :issuing_date %>
+<%= f.text_field :issuing_date %>
+
+<%= f.label :expiration_date %>
+<%= f.text_field :expiration_date %>
+
+<%= f.submit %>
+<% end %>
+

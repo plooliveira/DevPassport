@@ -16,11 +16,12 @@ class TestPolicy < ApplicationPolicy
     end
 
     def edit?
-      is_company?
+      raise
+
+      record.user.role == 3
     end
 
     def update?
-      is_company?
     end
 
     def destroy?
@@ -32,7 +33,7 @@ class TestPolicy < ApplicationPolicy
     def is_company?
       # user => current_user
       # record => @test
-      user.role = 3
+      # record.user.role == 3
     end
   end
 
