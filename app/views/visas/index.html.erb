@@ -1,0 +1,10 @@
+<h1>Visas and Tests</h1>
+
+<% @visas.each do |visa| %>
+  <h2>
+    <%= link_to visa.title, visa_path(visa) %>
+  </h2>
+  <h3>
+    <%= visa.description %>
+  </h3>
+<% end %>

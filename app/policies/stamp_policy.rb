@@ -4,4 +4,16 @@ class StampPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  def create?
+    true
+  end
+
+  def payment?
+    true
+  end
+
+  def show?
+    record.user == user
+  end
 end

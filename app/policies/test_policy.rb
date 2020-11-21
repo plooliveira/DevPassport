@@ -34,4 +34,8 @@ class TestPolicy < ApplicationPolicy
       record.user == user
     end
   end
+
+  def index?
+    true
+  end
 end
