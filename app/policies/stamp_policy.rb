@@ -10,10 +10,14 @@ class StampPolicy < ApplicationPolicy
   end
 
   def payment?
-    true
+    record.user == user
   end
 
   def show?
+    record.user == user
+  end
+
+  def check_payment?
     record.user == user
   end
 end
