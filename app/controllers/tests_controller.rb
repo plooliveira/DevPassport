@@ -1,9 +1,8 @@
-class TestesController < ApplicationController
+class TestsController < ApplicationController
 before_action :set_test, only: [:edit, :update, :destroy]
 
-
   def index
-    @tests = police_scope(Test)
+    @tests = policy_scope(Test).order(created_at: :desc)
   end
 
   def new
@@ -23,12 +22,12 @@ before_action :set_test, only: [:edit, :update, :destroy]
   end
 
   def update
-    @tests.destroy (test_params)
+    @test.update (test_params)
     redirect_to test_path(@test)
   end
 
   def destroy
-    @tests.destroy (test_params)
+    @test.destroy (test_params)
     redirect_to test_path
   end
 

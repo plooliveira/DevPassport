@@ -2,14 +2,16 @@ class TestPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       # scope => Test
-      scope.where(user: user)
+      scope.all
+    end
+
+    def index?
     end
 
     def new?
     end
 
     def create?
-      user.role == 3
     end
 
     def edit?
@@ -30,5 +32,6 @@ class TestPolicy < ApplicationPolicy
       # user => current_user
       # record => @test
       record.user == user
+    end
   end
 end
