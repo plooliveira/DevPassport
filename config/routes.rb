@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
 
   get     '/stamps/:id/payment',  to: "stamps#payment",       as: "payment"
-  get     '/stamps/:id/',         to: "stamps#show",          as: "stamp_show"
+  get     '/stamps/:id/',         to: "stamps#show",          as: "stamp"
   get     '/stamps/:id/edit',     to: "stamps#edit",          as: "edit_stamp"
   post    '/stamps/:id/',         to: "stamps#check_payment", as: "check_payment"
 

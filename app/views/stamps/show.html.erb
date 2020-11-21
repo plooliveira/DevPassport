@@ -14,3 +14,8 @@
   </li>
 </ul>
 
+<h1>Choose your reviewer:</h1>
+<%= simple_form_for(@stamp) do |f| %>
+  <%= f.input :issuing_date %>
+<%= f.submit %>
+<% end %>

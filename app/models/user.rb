@@ -6,6 +6,6 @@ class User < ApplicationRecord
 
   # has many stamps through tests
   # has many stamps through code_reviews
-
+  has_many :tecnologies, through: :technologies_users
   has_one_attached :avatar
 end
