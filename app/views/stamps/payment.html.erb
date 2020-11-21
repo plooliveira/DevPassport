@@ -2,7 +2,7 @@
 
 <%= @stamp.test.title %>
 
-<form action="/stamps/<%= @stamp.id %>" method="get">
+<form action="/stamps/<%= @stamp.id %>" method="post">
   <label for="cc_number">Credit Card:</label><br>
   <input type="text" name="cc_number"><br>
   <label for="cc_name">Name:</label><br>
