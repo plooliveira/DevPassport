@@ -3,11 +3,9 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  resources :reviewers, only: [:index, :show]
-
   get     'tests',                to: 'tests#index'
   get     'tests/new',            to: 'tests#new',            as: 'test'
-  post    'tests',                to: 'tests#creat'
+  post    'tests',                to: 'tests#create'
   get     'tests/:id/edit',       to: 'tests#edit',           as: 'edit_test'
   patch   'tests/:id',            to: 'tests#update'
   delete  'tests/:id',            to: 'tests#destroy'

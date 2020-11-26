@@ -15,14 +15,9 @@
   <li>
 
   </li>
+    <%= link_to "Choose the reviewer and start the test!", code_review_path(@stamp.code_review) %>
   <li>
 
   </li>
 </ul>
-
-<h1>Choose your reviewer:</h1>
-<%= simple_form_for(@code_review) do |f| %>
-  <%= f.input :issuing_date %>
-<%= f.submit %>
-<% end %>
 

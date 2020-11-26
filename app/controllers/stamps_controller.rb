@@ -11,7 +11,6 @@ class StampsController < ApplicationController
     @stamp.user_id = params["user"]
     @stamp.test_id = params["test"]
 
-
     @stamp.save
     @code_review.save
 

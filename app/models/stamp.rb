@@ -1,5 +1,4 @@
 class Stamp < ApplicationRecord
-  belongs_to :user
-  belongs_to :test
-  has_one :code_review
+  has_one :user
+  has_one :test
 end
