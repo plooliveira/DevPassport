@@ -5,12 +5,7 @@ Rails.application.routes.draw do
 
   resources :reviewers, only: [:index, :show]
 
-  get     'tests',                to: 'tests#index'
-  get     'tests/new',            to: 'tests#new',            as: 'test'
-  post    'tests',                to: 'tests#creat'
-  get     'tests/:id/edit',       to: 'tests#edit',           as: 'edit_test'
-  patch   'tests/:id',            to: 'tests#update'
-  delete  'tests/:id',            to: 'tests#destroy'
+  resources :tests, except: [:show]
 
   get     '/visas/',              to: "visas#index"
   get     '/visas/:id',           to: "visas#show",           as: "visa"

@@ -1,9 +1,12 @@
 <h1>All tests your company:</h1>
 
+<td>  <%= link_to "New Test", new_test_path %> </td>
+
 <tr>
-  <%= @tests.each do |test| %>
+  <% @tests.each do |test| %>
   <li>  <%= test.title %>   </li>
+  <li>  <%= test.description %>   </li>
   <td>  <%= link_to "Edit", edit_test_path(test) %> </td>
-  <td>  <%= link_to "Delete", test_path, method: :delete %> </td>
+  <td>  <%= link_to "Delete", test_path(test), method: :delete %> </td>
   <% end %>
 </tr>

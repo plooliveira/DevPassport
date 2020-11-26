@@ -9,7 +9,15 @@ class TestPolicy < ApplicationPolicy
     true
   end
 
-  def edit?
+  def create?
+    user.role == 3
+  end
+
+  def update?
+    record.user == user
+  end
+
+  def destroy?
     record.user == user
   end
 
