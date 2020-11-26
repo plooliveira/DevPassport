@@ -1,8 +1,13 @@
 class TestsController < ApplicationController
   before_action :set_test, only: [:edit, :update, :destroy]
 
+
   def index
     @tests = policy_scope(Test).order(created_at: :desc)
+  end
+
+  def dashboard
+    @tests = policy_scope(Test).where(user: current_user).order(created_at: :desc)
   end
 
   def new
@@ -15,7 +20,7 @@ class TestsController < ApplicationController
     @test.user = current_user
     authorize @test
     if @test.save
-      redirect_to tests_path
+      redirect_to dashboard_path
     else
       render :new
     end
@@ -26,12 +31,12 @@ class TestsController < ApplicationController
 
   def update
     @test.update (test_params)
-    redirect_to tests_path
+    redirect_to dashboard_path
   end
 
   def destroy
     @test.destroy
-    redirect_to tests_path
+    redirect_to dashboard_path
   end
 
   def set_test
