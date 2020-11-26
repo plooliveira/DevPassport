@@ -3,13 +3,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get     'tests',                to: 'tests#index'
-  get     'tests/new',            to: 'tests#new',            as: 'test'
-  post    'tests',                to: 'tests#create'
-  get     'tests/:id/edit',       to: 'tests#edit',           as: 'edit_test'
-  patch   'tests/:id',            to: 'tests#update'
-  delete  'tests/:id',            to: 'tests#destroy'
+  resources :reviewers, only: [:index, :show]
+  resources :tests, except: [:show]
 
+  get     '/dashboard/',          to: "tests#dashboard"
   get     '/visas/',              to: "visas#index"
   get     '/visas/:id',           to: "visas#show",           as: "visa"
 
