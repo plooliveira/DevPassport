@@ -5,12 +5,14 @@ class StampsController < ApplicationController
   def create
     @stamp = Stamp.new
     @code_review = CodeReview.new
+    @stamp.code_review = @code_review
+
     authorize @stamp
     @stamp.user_id = params["user"]
     @stamp.test_id = params["test"]
-    @stamp.save
 
-    @code_review.stamp = @stamp
+
+    @stamp.save
     @code_review.save
 
     redirect_to payment_path(@stamp)
@@ -20,6 +22,7 @@ class StampsController < ApplicationController
   end
 
   def show
+    @code_review = @stamp.code_review
   end
 
   def edit
@@ -29,9 +32,7 @@ class StampsController < ApplicationController
     redirect_to stamp_path(@stamp)
   end
 
-
   private
-
 
   def set_stamp
     @stamp = Stamp.find(params[:id])

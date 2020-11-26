@@ -1,4 +1,4 @@
-
+<h1></h1>
 <ul>
   <li>
     <%= @stamp.user.name %>
@@ -12,10 +12,17 @@
   <li>
     Expiration date: <%= @stamp.expiration_date %>
   </li>
+  <li>
+
+  </li>
+  <li>
+
+  </li>
 </ul>
 
 <h1>Choose your reviewer:</h1>
-<%= simple_form_for(@stamp) do |f| %>
+<%= simple_form_for(@code_review) do |f| %>
   <%= f.input :issuing_date %>
 <%= f.submit %>
 <% end %>
+
