@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get     '/dashboard/',          to: "tests#dashboard"
 
+  get     '/users/:id/dashboard/', to: "dashboard#show"
+
   get     '/visas/',              to: "visas#index"
   get     '/visas/:id',           to: "visas#show",           as: "visa"
   get     '/stamps/',             to: "stamps#index"
