@@ -1,4 +1,4 @@
-<h1></h1>
+<h1>This is your stamp</h1>
 <ul>
   <li>
     <%= @stamp.user.name %>
@@ -6,18 +6,36 @@
   <li>
     <%= @stamp.test.title %>
   </li>
-  <li>
-    Issuing date: <%= @stamp.issuing_date %>
-  </li>
-  <li>
-    Expiration date: <%= @stamp.expiration_date %>
-  </li>
-  <li>
-
-  </li>
-    <%= link_to "Choose the reviewer and start the test!", code_review_path(@stamp.code_review) %>
-  <li>
-
-  </li>
 </ul>
 
+
+<%= link_to "Click here to start your test" %>
+<!-- mudar status de 1 para 2 -->
+
+<!-- se status = 2 -->
+<!-- mostrar aqui link do git hub -->
+<!-- mostrar aqui formulario para test_answer -->
+<!-- mostrar submit button -->
+<!-- mostrar data limite para terminar o teste -->
+<!-- mudar status para 3 -->
+
+<!-- se status = 3 -->
+<!-- mostrar avaliação pending -->
+
+<!-- se status = 4 -->
+<!-- mostrar resultado da avaliação // feedback // tela com parabéns lalala -->
+
+
+
+<!-- se usuario for admin -->
+<!-- mostrar form pra inserir feedback -->
+<!-- quando submit, mudar -->
+
+
+<!--
+0 = criado
+1 = pago
+2 = iniciado
+3 = finalizad pelo usuario
+4 = revisado, FIM
+-->

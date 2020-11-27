@@ -1,18 +1,15 @@
 class StampsController < ApplicationController
-  before_action :set_stamp, only: [:payment, :show, :edit, :check_payment]
+  before_action :set_stamp, only: [:payment, :show, :check_payment]
   skip_before_action :verify_authenticity_token, only: [:check_payment]
 
   def create
     @stamp = Stamp.new
-    @code_review = CodeReview.new
-    @stamp.code_review = @code_review
-
     authorize @stamp
+
     @stamp.user_id = params["user"]
     @stamp.test_id = params["test"]
-
+    @stamp.status = 0
     @stamp.save
-    @code_review.save
 
     redirect_to payment_path(@stamp)
   end
@@ -20,15 +17,12 @@ class StampsController < ApplicationController
   def payment
   end
 
-  def show
-    @code_review = @stamp.code_review
-  end
-
-  def edit
-  end
-
   def check_payment
+    @stamp.status = 1
     redirect_to stamp_path(@stamp)
+  end
+
+  def show
   end
 
   private
