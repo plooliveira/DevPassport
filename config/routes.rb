@@ -5,9 +5,8 @@ Rails.application.routes.draw do
 
   resources :tests, except: [:show]
 
-  get     '/dashboard/',          to: "tests#dashboard"
-
-  get     '/users/:id/dashboard/', to: "dashboard#show"
+  get     '/company_dashboard/',  to: "dashboard#company"
+  get     '/user_dashboard/',     to: "dashboard#user"
 
   get     '/visas/',              to: "visas#index"
   get     '/visas/:id',           to: "visas#show",           as: "visa"
