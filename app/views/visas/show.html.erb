@@ -6,6 +6,7 @@
       <li>Author: <%= test.user.name  %></li>
       <li>Description: <%= test.description %></li>
       <li>Seniority: <%= test.seniority %></li>
+      <li>Price: <%= test.price %></li>
         <%= link_to "Comprar", stamp_create_path(user: current_user, test: test), method: :post, class:"btn btn-primary" %>
     </ul>
   <% end %>
