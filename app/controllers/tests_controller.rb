@@ -1,7 +1,6 @@
 class TestsController < ApplicationController
   before_action :set_test, only: [:edit, :update, :destroy]
 
-
   def index
     @tests = policy_scope(Test).order(created_at: :desc)
   end

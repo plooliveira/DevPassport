@@ -1,15 +1,28 @@
-<h1>Register your test:</h1>
+<div class="row justify-content-center p-5">
+  <div class="col-md-6">
+    <div>
+      <div class="p-3 border bg-light">
 
-<%= simple_form_for(@test) do |f| %>
+      <h1>Register your test:</h1>
 
-<%= f.input :title %>
+      <%= simple_form_for(@test) do |f| %>
 
-<%= f.input :description %>
+      <%= f.input :title %>
 
-<%= f.input :seniority, collection: ["junior", "pleno", "senior"] %>
+      <%= f.input :description %>
 
-<%= f.input :visa_id, collection: Visa.all, include_blank: false %>
+      <%= f.input :seniority, collection: ["junior", "pleno", "senior"] %>
 
-<%= f.submit %>
-<% end %>
+      <%= f.input :visa_id, collection: Visa.all, include_blank: false %></div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Create", class:"btn btn-primary"%>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+
 

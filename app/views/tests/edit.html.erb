@@ -1,7 +1,19 @@
-<h1>Edit your test:</h1>
+<div class="row justify-content-center p-5">
+  <div class="col-md-6">
+    <div>
+      <div class="p-3 border bg-light">
 
-<%= simple_form_for(@test) do |f| %>
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.submit %>
-<% end %>
+      <h1>Edit your test:</h1>
+
+      <%= simple_form_for(@test) do |f| %>
+      <%= f.input :title %>
+      <%= f.input :description %>
+      </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Update", class:"btn btn-primary"%>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
