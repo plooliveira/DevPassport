@@ -23,7 +23,8 @@ Test.create(
   description: "Um teste muito muito difícil",
   user: User.where(name: "Nubank").first,
   visa: Visa.where(title: "Front-End").first,
-  seniority: "Junior"
+  seniority: "Junior",
+  link: "https://github.com/hurbcom/challenge-charlie/fork"
 )
 
 Test.create(

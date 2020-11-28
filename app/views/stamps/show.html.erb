@@ -8,8 +8,11 @@
   </li>
 </ul>
 
-
-<%= link_to "Click here to start your test" %>
+<%if @stamp.status < 2%>
+<%= link_to "Click here to start your test", start_test_path, method: "post" %>
+<%else%>
+<%= link_to  "Finish test" %>
+<%end%>
 <!-- mudar status de 1 para 2 -->
 
 <!-- se status = 2 -->
@@ -18,6 +21,14 @@
 <!-- mostrar submit button -->
 <!-- mostrar data limite para terminar o teste -->
 <!-- mudar status para 3 -->
+<%if @stamp.status == 2 %>
+<p>
+  Teste: <a href="<%= @stamp.test.link%>" target="blank">Click here to open your test</a>
+</p>
+<%end%>
+
+
+
 
 <!-- se status = 3 -->
 <!-- mostrar avaliação pending -->
