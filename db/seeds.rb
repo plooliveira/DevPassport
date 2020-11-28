@@ -25,6 +25,7 @@ Test.create(
   visa: Visa.where(title: "Front-End").first,
   seniority: "Junior",
   price: 100,
+  link: "https://github.com/hurbcom/challenge-charlie/fork"
 )
 
 Test.create(

@@ -25,4 +25,9 @@ class StampPolicy < ApplicationPolicy
   def check_payment?
     record.user == user
   end
+
+  def start_test?
+    record.user == user
+  end
+  
 end
