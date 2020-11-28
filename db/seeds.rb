@@ -61,7 +61,7 @@ Test.create(
   title: "Stone's Full Stack Challenge",
   description: "Implement a complete web application",
   user: User.where(name: "Stone").first,
-  visa: Visa.where(title: "Back-End").first,
+  visa: Visa.where(title: "Full Stack").first,
   seniority: "Senior Developer",
   price: 100,
   link: "https://github.com/hurbcom/challenge-charlie/fork"
