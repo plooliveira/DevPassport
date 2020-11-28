@@ -1,7 +1,12 @@
-<h1>These are all the tests we have:</h1>
-<tr>
-  <% @tests.each do |test| %>
-  <li>  <%= test.title %>   </li>
-  <li>  <%= test.description %>   </li>
-  <% end %>
-</tr>
+<div class="row justify-content-center p-5">
+  <div class="col-md-6">
+    <div>
+      <div class="p-3 border bg-light">
+
+    <h1>These are all the tests we have:</h1>
+    <tr>
+      <% @tests.each do |test| %>
+      <li><%= link_to test.title, test_path(test) %></li>
+      <p><%= test.description %></p>
+      <% end %>
+    </tr>
