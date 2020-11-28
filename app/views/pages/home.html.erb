@@ -1,10 +1,96 @@
-<h1>Welcome to DevPassport</h1>
+<div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'banner_main.jpg' %>)">
+  <div>
+    <h1>DevPassport</h1>
+    <p>The best way to be approved in the main technologies companies of the world!</p>
+    <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
+  </div>
+</div>
 
-<ul>
-  <li><%= link_to "View all our visas", visas_path %></li>
-  <li><%= link_to "View all our tests", tests_path %></li>
-  <li><%= link_to "View the company dashboard", company_dashboard_path %></li>
-</ul>
+<div class="container">
+  <div class="d-flex justify-content-around mt-4">
 
+    <div class="about-box">
+      <%= image_tag "pain_rasta_1.jpg", height: '320', width: '520' %>
+      <h3 class="text-center mt-2">Wonderful islands around the world</h2>
+        <p class="text-center">
+          MySland offers you exclusive private islands in exclusive places like the Caribbean, the French Riviera and the Italian coastline. You can book for a single weekend or for the whole summer.
+        </p>
+    </div>
 
+    <div class="about-box">
+      <%= image_tag "pain_girl_1.jpg", height: '320', width: '520' %>
+      <h3 class="text-center mt-2">Privacy and a unique experience</h2>
+        <p class="text-center">
+          You'll have the entire island for yourself. MySland also offers concierge services so you don't have to worry about anything: transportation, supplies and staffing are all handled for you.
+        </p>
+    </div>
+  </div>
+</div>
 
+<div class="container mt-5">
+  <div class="cards">
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'neon_ballon.jpg' %>)">
+      Back-end
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'mirror.jpg' %>)">
+      Front-end
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'keyboard.jpg' %>)">
+      Full-stack
+    </div>
+
+  </div>
+</div>
+
+<!-- <div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div> -->
+
+<h2 class="text-center mt-4">How it works</h2>
+
+<div class="cards_undraw">
+  <div class="card_undraw">
+    <%= image_tag "undraw_dashboard_nklg.png" %>
+    <h4>Filter down to your perfect fit</h4>
+    <p>Personalize your search with filters—like price range or a pool—to get exactly what you want.</p>
+  </div>
+
+  <div class="card_undraw">
+    <%= image_tag "undraw_code_review_l1q9.png" %>
+    <h4>Dig into the details</h4>
+    <p>Check out the photos. Then, read guest reviews from past reservations to learn what it’s like in person.</p>
+  </div>
+
+  <div class="card_undraw">
+    <%= image_tag "undraw_coding_6mjf.png" %>
+    <h4>Book with peace of mind</h4>
+    <p>We keep your info safe and follow global security standards to process your payments.</p>
+  </div>
+
+  <div class="card_undraw">
+    <%= image_tag "undraw_flutter_dev_wvqj.png" %>
+    <h4>Arrive and enjoy!</h4>
+    <p>Your host is only a message away if you have any questions. They can also offer local tips and advice.</p>
+  </div>
+
+  <div class="card_undraw">
+    <%= image_tag "undraw_winners_ao2o.png" %>
+    <h4>Arrive and enjoy!</h4>
+    <p>Your host is only a message away if you have any questions. They can also offer local tips and advice.</p>
+  </div>
+
+</div>
+
+<div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'success_table.jpg' %>)">
+  <div>
+    <h1>DevPassport</h1>
+    <p>The best way to be approved in the main technologies companies of the world!</p>
+  </div>
+</div>
