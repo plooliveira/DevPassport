@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get     '/stamps/:id/payment',  to: "stamps#payment",       as: "payment"
   post    '/stamps/:id/',         to: "stamps#check_payment", as: "check_payment"
   get     '/stamps/:id/',         to: "stamps#show",          as: "stamp"
+  post    '/stamps/:id/start',    to: "stamps#start_test",    as: "start_test"
 
 
 end
