@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  resources :tests, except: [:show]
+  resources :tests
 
   get     '/company_dashboard/',  to: "dashboard#company"
   get     '/user_dashboard/',     to: "dashboard#user"
