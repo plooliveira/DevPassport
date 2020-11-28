@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  resources :tests, except: [:show]
+  resources :tests
 
   get     '/company_dashboard/',  to: "dashboard#company"
   get     '/user_dashboard/',     to: "dashboard#user"
@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get     '/stamps/:id/payment',  to: "stamps#payment",       as: "payment"
   post    '/stamps/:id/',         to: "stamps#check_payment", as: "check_payment"
   get     '/stamps/:id/',         to: "stamps#show",          as: "stamp"
+  post    '/stamps/:id/start',    to: "stamps#start_test",    as: "start_test"
 
 
 end

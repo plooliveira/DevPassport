@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  # has many stamps through tests
+  has_many :stamps
   # has many stamps through code_reviews
   has_one_attached :avatar
 end

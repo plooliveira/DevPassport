@@ -16,5 +16,4 @@ class TestPolicy < ApplicationPolicy
   def destroy?
     record.user == user
   end
-
 end
