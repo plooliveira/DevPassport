@@ -1,11 +1,21 @@
-<h1>All tests your company:</h1>
+<h1>All the tests from <%= current_user.name %>:</h1>
 
-<td>  <%= link_to "New Test", new_test_path %> </td>
-<tr>
-  <% @tests.each do |test| %>
-  <li>  <%= test.title %>   </li>
-  <li>  <%= test.description %>   </li>
-  <td>  <%= link_to "Edit", edit_test_path(test) %> </td>
-  <td>  <%= link_to "Delete", test_path(test), method: :delete %> </td>
-  <% end %>
-</tr>
+<%= link_to "Create New Test", new_test_path %>
+
+
+<% @tests.each do |test| %>
+  <h2>
+    <%= test.title %>
+  </h2>
+  <ul>
+    <li>
+      <%= test.description %>
+    </li>
+    <li>
+      <%= link_to "Edit", edit_test_path(test) %>
+    </li>
+    <li>
+      <%= link_to "Delete", test_path(test), method: :delete %>
+    </li>
+  </ul>
+<% end %>

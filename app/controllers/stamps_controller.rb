@@ -32,7 +32,7 @@ class StampsController < ApplicationController
   def start_test
     @stamp.status = 2
     @stamp.save
-    redirect_to stamp_path
+    redirect_to stamp_path(@stamp)
   end
 
   private

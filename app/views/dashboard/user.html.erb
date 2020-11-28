@@ -14,23 +14,87 @@
   </ul>
 
 
-  <h2>These are your stamps</h2>
-  <% @user.stamps.each do |stamp|  %>
-    <h3>
-      <%= stamp.test.title %>
-    </h3>
-    <ul>
-      <li>
-        Start date: <%= stamp.start_date %>
-      </li>
-      <li>
-        Deadline: <%= stamp.deadline_date %>
-      </li>
-      <li>
-        Status: <%= status_name(stamp.status) %>
-      </li>
-    </ul>
-  <% end %>
+<!-- STAMPS -->
+<% stamps = @user.stamps.select { |stamp| stamp.status == 4 } %>
+
+<% unless stamps.empty? %>
+  <h2>These are your stamps!</h2>
+<% end %>
+
+<% stamps.each do |stamp|  %>
+  <h3>
+    <%= link_to stamp.test.title, stamp_path(stamp) %>
+  </h3>
+  <ul>
+    <li>
+      Status: <%= status_name(stamp.status) %>
+    </li>
+    <li>
+      Start date: <%= stamp.start_date %>
+    </li>
+    <li>
+      Deadline: <%= stamp.deadline_date %>
+    </li>
+    <li>
+      <%= link_to "Click here to start your test", start_test_path(stamp), method: "post" %>
+    </li>
+  </ul>
+<% end %>
 
 
 
+
+<!-- TESTS NOT STARTED -->
+<% stamps = @user.stamps.select { |stamp| stamp.status == 0 || stamp.status == 1 } %>
+
+<% unless stamps.empty? %>
+  <h2>Tests you haven't started yet:</h2>
+<% end %>
+
+<% stamps.each do |stamp|  %>
+  <h3>
+    <%= link_to stamp.test.title, stamp_path(stamp) %>
+  </h3>
+  <ul>
+    <li>
+      Status: <%= status_name(stamp.status) %>
+    </li>
+    <li>
+      Start date: <%= stamp.start_date %>
+    </li>
+    <li>
+      Deadline: <%= stamp.deadline_date %>
+    </li>
+    <li>
+      <%= link_to "Click here to start your test", start_test_path(stamp), method: "post" %>
+    </li>
+  </ul>
+<% end %>
+
+
+<!-- OTHER TESTS -->
+<% stamps = @user.stamps.select { |stamp| stamp.status != 0 && stamp.status != 1 && stamp.status != 4  } %>
+
+<% unless stamps.empty? %>
+  <h2>Other tests:</h2>
+<% end %>
+
+<% stamps.each do |stamp|  %>
+  <h3>
+    <%= link_to stamp.test.title, stamp_path(stamp) %>
+  </h3>
+  <ul>
+    <li>
+      Status: <%= status_name(stamp.status) %>
+    </li>
+    <li>
+      Start date: <%= stamp.start_date %>
+    </li>
+    <li>
+      Deadline: <%= stamp.deadline_date %>
+    </li>
+    <li>
+      <%= link_to "Click here to start your test", start_test_path(stamp), method: "post" %>
+    </li>
+  </ul>
+<% end %>
