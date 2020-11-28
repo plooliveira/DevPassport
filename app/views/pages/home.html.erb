@@ -1,14 +1,8 @@
-<!-- <ul>
-  <li><%= link_to "View all our visas", visas_path %></li>
-  <li><%= link_to "View all our tests", tests_path %></li>
-  <li><%= link_to "View the company dashboard", company_dashboard_path %></li>
-</ul> -->
-
 <div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'banner_main.jpg' %>)">
   <div>
     <h1>DevPassport</h1>
     <p>The best way to be approved in the main technologies companies of the world!</p>
-    <a class="btn btn-flat" href="visas_path">Visas</a>
+    <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
   </div>
 </div>
 
