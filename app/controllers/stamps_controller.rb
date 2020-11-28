@@ -22,6 +22,7 @@ class StampsController < ApplicationController
 
   def check_payment
     @stamp.status = 1
+    @stamp.save
     redirect_to stamp_path(@stamp)
   end
 
