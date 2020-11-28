@@ -1,0 +1,27 @@
+<h1>Dashboard</h1>
+
+  <h2>This is you</h2>
+  <ul>
+    <li><%= @user.name %></li>
+    <li><%= @user.email %></li>
+    <li><%= @user.cpf %></li>
+  </ul>
+
+
+  <h2>These are your stamps</h2>
+  <% @user.stamps.each do |stamp|  %>
+    <h3>
+      <%= stamp.test.title %>
+    </h3>
+    <ul>
+      <li>
+        <%= stamp.start_date %>
+      </li>
+      <li>
+        <%= stamp.deadline_date %>
+      </li>
+      <li>
+        <%= status_name[stamp.status] %>
+      </li>
+    </ul>
+  <% end %>
