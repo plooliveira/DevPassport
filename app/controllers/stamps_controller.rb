@@ -8,6 +8,9 @@ class StampsController < ApplicationController
 
     @stamp.user_id = params["user"]
     @stamp.test_id = params["test"]
+    @stamp.start_date = Date.today
+    # nao eh!! precisa modificar para ser a data onde usuario clica em "start test"
+    @stamp.deadline_date = Date.today + 7
     @stamp.status = 0
     @stamp.save
 
@@ -19,6 +22,7 @@ class StampsController < ApplicationController
 
   def check_payment
     @stamp.status = 1
+    @stamp.save
     redirect_to stamp_path(@stamp)
   end
 

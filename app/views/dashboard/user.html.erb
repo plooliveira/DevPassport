@@ -1,0 +1,36 @@
+<% def status_name(index) %>
+<%  hash = { 0 => "payment pending", 1 => "payment approved", 2 => "test started", 3 => "test completed", 4 => "stamp granted", 5 => "stamp not granted" } %>
+<%  return hash[index] %>
+<% end %>
+
+
+<h1>Dashboard</h1>
+
+  <h2>This is you</h2>
+  <ul>
+    <li>Name: <%= @user.name %></li>
+    <li>Email: <%= @user.email %></li>
+    <li>CPF: <%= @user.cpf %></li>
+  </ul>
+
+
+  <h2>These are your stamps</h2>
+  <% @user.stamps.each do |stamp|  %>
+    <h3>
+      <%= stamp.test.title %>
+    </h3>
+    <ul>
+      <li>
+        Start date: <%= stamp.start_date %>
+      </li>
+      <li>
+        Deadline: <%= stamp.deadline_date %>
+      </li>
+      <li>
+        Status: <%= status_name(stamp.status) %>
+      </li>
+    </ul>
+  <% end %>
+
+
+

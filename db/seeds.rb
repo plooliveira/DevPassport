@@ -24,6 +24,7 @@ Test.create(
   user: User.where(name: "Nubank").first,
   visa: Visa.where(title: "Front-End").first,
   seniority: "Junior",
+  price: 100,
   link: "https://github.com/hurbcom/challenge-charlie/fork"
 )
 
@@ -32,7 +33,8 @@ Test.create(
   description: "Um teste muito muito difícil",
   user: User.where(name: "Nubank").first,
   visa: Visa.where(title: "Back-End").first,
-  seniority: "Pleno"
+  seniority: "Pleno",
+  price: 100,
 )
 
 Test.create(
@@ -40,7 +42,8 @@ Test.create(
   description: "Um teste muito muito difícil",
   user: User.where(name: "Stone").first,
   visa: Visa.where(title: "Front-End").first,
-  seniority: "Junior"
+  seniority: "Junior",
+  price: 100,
 )
 
 Test.create(
@@ -48,5 +51,6 @@ Test.create(
   description: "Um teste muito muito difícil",
   user: User.where(name: "Stone").first,
   visa: Visa.where(title: "Back-End").first,
-  seniority: "Pleno"
+  seniority: "Pleno",
+  price: 100,
 )
