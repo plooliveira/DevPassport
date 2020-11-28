@@ -36,15 +36,25 @@ ActiveRecord::Schema.define(version: 2020_11_27_000930) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "code_reviews", force: :cascade do |t|
+    t.bigint "stamp_id", null: false
+    t.bigint "user_id", null: false
+    t.string "test_answer"
+    t.text "reviewer_feedback"
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "status"
+    t.index ["stamp_id"], name: "index_code_reviews_on_stamp_id"
+    t.index ["user_id"], name: "index_code_reviews_on_user_id"
+  end
+
   create_table "stamps", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "test_id", null: false
-    t.date "start_date"
-    t.date "result_date"
+    t.date "issuing_date"
     t.date "expiration_date"
-    t.string "test_answer"
-    t.text "reviewer_feedback"
-    t.integer "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["test_id"], name: "index_stamps_on_test_id"
@@ -53,13 +63,12 @@ ActiveRecord::Schema.define(version: 2020_11_27_000930) do
 
   create_table "tests", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.bigint "visa_id", null: false
     t.string "title"
     t.text "description"
-    t.string "seniority"
-    t.integer "price"
+    t.bigint "visa_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "seniority"
     t.string "link"
     t.index ["user_id"], name: "index_tests_on_user_id"
     t.index ["visa_id"], name: "index_tests_on_visa_id"
@@ -73,9 +82,9 @@ ActiveRecord::Schema.define(version: 2020_11_27_000930) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "role"
     t.string "name"
     t.string "cpf"
-    t.integer "role"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -88,6 +97,8 @@ ActiveRecord::Schema.define(version: 2020_11_27_000930) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "code_reviews", "stamps"
+  add_foreign_key "code_reviews", "users"
   add_foreign_key "stamps", "tests"
   add_foreign_key "stamps", "users"
   add_foreign_key "tests", "users"
