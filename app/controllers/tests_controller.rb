@@ -1,4 +1,5 @@
 class TestsController < ApplicationController
+
   before_action :set_test, only: [:edit, :update, :destroy]
 
   def index
@@ -14,6 +15,7 @@ class TestsController < ApplicationController
     @test = Test.new(test_params)
     @test.user = current_user
     authorize @test
+
     if @test.save
       redirect_to company_dashboard_path
     else
@@ -25,7 +27,7 @@ class TestsController < ApplicationController
   end
 
   def update
-    @test.update (test_params)
+    @test.update(test_params)
     redirect_to company_dashboard_path
   end
 

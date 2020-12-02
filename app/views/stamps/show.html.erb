@@ -1,21 +1,28 @@
 <div class="container" style="width: 900px;">
+
   <img src="https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2019/01/11142058/programador-front-end-1024x579.jpg" alt="">
+
   <h1 class="mt-5">This is your stamp</h1>
+
   <ul>
     <li>
       <%= @stamp.user.name %>
     </li>
+
     <li>
       <%= @stamp.test.title %>
     </li>
   </ul>
 
+
   <h2>Instructions:</h2>
+
   <p>
     When you click Start, you will have 7 calendar days to complete the test. A link to the GitHub repository where the test is will be opened and you must fork it. Follow the instructions in the readme to complete it. Let's code!
   </p>
 
   <p><%= link_to  "Open Test", "#{@stamp.test.link}", class: 'btn btn-info'%></p>
+
   <br>
   <br>
   <br>

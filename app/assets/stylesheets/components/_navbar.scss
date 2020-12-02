@@ -23,3 +23,15 @@
   color: white;
   text-decoration: none;
 }
+
+.navbar-home {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  .navbar-wagon-link {
+    color: white;
+    font-weight: bold;
+  }
+}

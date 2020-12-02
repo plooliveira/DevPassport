@@ -1,7 +1,7 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 26px;
 }
 
 // Smallest device
@@ -72,7 +72,6 @@
   padding: 16px;
 }
 
-  // # Cards do landing page Mysland
 .card_undraw img {
   height: 100px;
   width: 100px;
