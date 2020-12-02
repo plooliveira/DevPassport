@@ -1,5 +1,5 @@
 .footer {
-  background-color: #EEEEEE;
+  background-color: $black;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -7,11 +7,12 @@
   justify-content: center;
   text-align: center;
   padding-top: 10px;
+
 }
 
 .footer a {
   font-size: 20px;
-  color:  #3B69E4;
+  color:  #light-gray;
 }
 
 .footer p {

@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  background-color: $black;
+}
+
+h1 {
+  letter-spacing: 0.1em;
+}
+
