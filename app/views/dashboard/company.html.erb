@@ -1,21 +1,24 @@
-<h1>All the tests from <%= current_user.name %>:</h1>
 
-<%= link_to "Create New Test", new_test_path %>
+<div class="dash-dashboard-company">
 
+  <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img rounded-circle" %>
+
+  <p>Welcome to tests</p>
+
+<h1>All the tests your company <%= current_user.name %>:</h1>
 
 <% @tests.each do |test| %>
   <h2>
     <%= test.title %>
   </h2>
-  <ul>
-    <li>
-      <%= test.description %>
-    </li>
-    <li>
-      <%= link_to "Edit", edit_test_path(test) %>
-    </li>
-    <li>
-      <%= link_to "Delete", test_path(test), method: :delete %>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <%= test.description %>
+      </li>
+    </ul>
 <% end %>
+  <button class="btn-dash">
+    <%= link_to "Create New Test", new_test_path %>
+  </button>
+</div>
+
