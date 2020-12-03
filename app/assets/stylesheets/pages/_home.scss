@@ -2,7 +2,36 @@
 body {
   background-color: black;
 
-  h1 {
+  h1, h2, h3, p {
     color: white;
+    margin: 0 0 10px;
+    font-family: Roboto,Arial;
   }
+}
+
+
+// Specific CSS for video home-page
+.video-home-modal {
+  height: 400px;
+  text-align: center;
+}
+
+.video-home-modal a {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.efeito-video-instucional {
+  height: 100%;
+  background-color: rgba(0,0,0,.47);
+}
+
+.video-home-modal {
+  text-align: center;
 }

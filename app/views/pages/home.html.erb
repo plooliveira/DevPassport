@@ -1,30 +1,63 @@
 
 <div class="d-flex justify-content-around home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'double-flat-pannel.jpg' %>)">
-  <div>
+  <!-- <div>
     <h1>DevPassport</h1>
     <p>
       <span id="banner-typed-text"></span>
     </p>
+  </div> -->
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/pain_rasta_1.jpg" alt="First slide">
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/girl-hyper-upset.jpg" alt="Second slide">
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/undraw_static_assets_rpm6.png" alt="Third slide">
+    </div>
+
   </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
 </div>
 
-  <div class="text-center mt-5">
-    <h1>
-      ... pain in the real world!
-    </h1>
-  </div>
+</div>
 
-  <div class="container">
+
+    <div class="text-center mt-5">
+      <h1>pain in the real world!</h1>
+    </div>'
+
     <div class="row justify-content-center">
-
       <div class="col-6">
         <%= image_tag("pain_rasta_1.jpg", height: '320', width: '520') %>
       </div>
 
-      <div class="col-6">
-        <h3>
-          What a heck!!
-        </h3>
+      <div class="col-6 text-center mt-5">
+        <h3>What a heck!!</h3>
         <p>
           The most of challenges  sent by the companies to the candidates is very similar, with a few or no changes!
         </p>
@@ -32,11 +65,8 @@
     </div>
 
     <div class="row justify-content-center">
-
-      <div class="col-6">
-        <h3>
-          Repeatable challenges again!
-        </h3>
+      <div class="col-sm-6 col-lg-6 text-center mt-5">
+        <h3>Repeatable challenges again!</h3>
         <p>
           The same challenge again...
           But, the candidate's ability tests are the same, waste of time... dammm!
@@ -46,80 +76,76 @@
       <div class="col-sm-6 col-lg-6">
         <%= image_tag("girl-hyper-upset.jpg", height: '320', width: '520', style: 'object-fit: cover;') %>
       </div>
-
     </div>
 
-<!-- <div class="d-flex justify-content-center mt-4"> -->
-  <div class="text-center mt-5">
-    <h1>
-      We have the solution.
-    </h1>
-    <h2>DevPassport Visas!</h2>
-  </div>
-
-
-<div class="container">
-  <div class="cards">
-
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'blue-keyb.jpg' %>)">
-      Back-end
+    <div class="text-center mt-5">
+      <h1>We have the solution.</h1>
+      <h2>DevPassport Visas!</h2>
     </div>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'double.jpg' %>)">
-      Front-end
-    </div>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'matrix.jpg' %>)">
-      Full-stack
-    </div>
+      <div class="cards">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'blue-keyb.jpg' %>)">
+          Back-end
+        </div>
 
-  </div>
-  <div class="d-flex justify-content-center mt-4">
-    <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
-  </div>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'double.jpg' %>)">
+          Front-end
+        </div>
 
-</div>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'matrix.jpg' %>)">
+          Full-stack
+        </div>
+      </div>
 
-<h2 class="text-center mt-5">How it works</h2>
+      <div class="d-flex justify-content-center mt-4">
+        <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
+      </div>
 
-<div class="cards_undraw mt-3">
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_static_assets_rpm6.png", style: 'object-fit: cover;' %>
-    <h4>Choose your stamps</h4>
-    <p>Realize several tests with the main technologies.</p>
-  </div>
+      <h2 class="text-center mt-5">How it works</h2>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_programming_devpass.png", style: 'object-fit: cover;' %>
-    <h4>Code your test</h4>
-    <p>Have enough time to accomplish the challengers.</p>
-  </div>
+      <div class="cards_undraw mt-3">
+        <div class="card_undraw">
+          <%= image_tag "undraw_static_assets_rpm6.png", style: 'object-fit: cover;' %>
+          <h4>Choose your stamps</h4>
+          <p>Realize several tests with the main technologies.</p>
+        </div>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_code_review_l1q9.png", style: 'object-fit: cover;' %>
-    <h4>Code reviewer</h4>
-    <p>Choose the most famous developers to review your code.</p>
-  </div>
+        <div class="card_undraw">
+          <%= image_tag "undraw_programming_devpass.png", style: 'object-fit: cover;' %>
+          <h4>Code your test</h4>
+          <p>Have enough time to accomplish the challengers.</p>
+        </div>
 
-<div class="card_undraw">
-    <%= image_tag "undraw_dashboard_nklg.png", style: 'object-fit: cover;' %>
-    <h4>User Dashboard</h4>
-    <p>Personalize your own dashboard with stamps that you get it!</p>
-  </div>
+        <div class="card_undraw">
+          <%= image_tag "undraw_code_review_l1q9.png", style: 'object-fit: cover;' %>
+          <h4>Code reviewer</h4>
+          <p>Choose the most famous developers to review your code.</p>
+        </div>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_winners_ao2o.png", style: 'object-fit: cover;' %>
-    <h4>Enjoy & Celebrate!</h4>
-    <p>No more repeatable coding test.</p>
-  </div>
+        <div class="card_undraw">
+          <%= image_tag "undraw_dashboard_nklg.png", style: 'object-fit: cover;' %>
+          <h4>User Dashboard</h4>
+          <p>Personalize your own dashboard with stamps that you get it!</p>
+        </div>
 
-</div>
+        <div class="card_undraw">
+          <%= image_tag "undraw_winners_ao2o.png", style: 'object-fit: cover;' %>
+          <h4>Enjoy & Celebrate!</h4>
+          <p>No more repeatable coding test.</p>
+        </div>
+      </div>
 
-<div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'success_table.jpg' %>)">
-  <div>
-    <h1>Success!</h1>
-    <p>Be accept to work in the most companies of the world with one test only!</p>
-  </div>
-</div>
+        <div class="col-md-12 col-xs-12 video-home-modal no-padding" style="background:url(<%= image_path 'Capa_Video_banner.jpg' %>) 50% 50% no-repeat;background-attachment:fixed;background-size:cover">
+          <div class="efeito-video-instucional no-padding text-center mt-5">
+            <h3>Em nosso DNA está a experiência com operações que não podem parar e a missão de apoiar as empresas na jornada da transformação digital&nbsp;</h3>
+          </div>
+        </div>
 
+        <div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'success_table.jpg' %>)">
+          <div>
+            <h1>Success!</h1>
+            <p>Be accept to work in the most companies of the world with one test only!</p>
+          </div>
+        </div>
