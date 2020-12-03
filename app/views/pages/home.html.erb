@@ -1,11 +1,10 @@
 
-<%= content_for(:navbar_class, "navbar-home") %>
-
-<div class="background">
-<div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'double-flat-pannel.jpg' %>)">
+<div class="d-flex justify-content-around home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'double-flat-pannel.jpg' %>)">
   <div>
     <h1>DevPassport</h1>
-    <p>The best way to be approved in the main technologies companies of the world!</p>
+    <p>
+      <span id="banner-typed-text"></span>
+    </p>
   </div>
 </div>
 
@@ -16,13 +15,13 @@
   </div>
 
   <div class="container">
-    <div class="row mt-5">
+    <div class="row justify-content-center">
 
-      <div class="col-sm-6 col-lg-6">
+      <div class="col-6">
         <%= image_tag("pain_rasta_1.jpg", height: '320', width: '520') %>
       </div>
 
-      <div class="col-sm-6 col-lg-6 text-center mt-2">
+      <div class="col-6">
         <h3>
           What a heck!!
         </h3>
@@ -32,9 +31,9 @@
       </div>
     </div>
 
-    <div class="row mt-5">
+    <div class="row justify-content-center">
 
-      <div class="col-sm-6 col-lg-6 text-center mt-2">
+      <div class="col-6">
         <h3>
           Repeatable challenges again!
         </h3>
@@ -123,4 +122,4 @@
     <p>Be accept to work in the most companies of the world with one test only!</p>
   </div>
 </div>
-</div>
+
