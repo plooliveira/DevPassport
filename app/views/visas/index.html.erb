@@ -1,10 +1,18 @@
-<h1>Our Visas for You</h1>
 
-<% @visas.each do |visa| %>
-  <h2>
-    <%= link_to visa.title, visa_path(visa) %>
-  </h2>
-  <h3>
-    <%= visa.description %>
-  </h3>
-<% end %>
+<div class="container">
+  <h1 class="text-center">Our Visas for You</h1>
+
+  <% @visas.each do |visa| %>
+
+    <div class="card-visa">
+
+      <img src="https://source.unsplash.com/random" alt="">
+      <h2>
+        <%= link_to visa.title, visa_path(visa) %>
+      </h2>
+      <p>
+        <%= visa.description %>
+      </p>
+    </div>
+  <% end %>
+</div>
