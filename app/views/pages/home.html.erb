@@ -1,96 +1,138 @@
-<div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'banner_main.jpg' %>)">
+
+ <div class="d-flex justify-content-around home-banner">
   <div>
     <h1>DevPassport</h1>
-    <p>The best way to be approved in the main technologies companies of the world!</p>
-    <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
+    <p>
+      <span id="banner-typed-text"></span>
+    </p>
   </div>
 </div>
 
-<div class="container">
-  <div class="d-flex justify-content-around mt-4">
+<div id="devCarousel" class="carousel slide" data-ride="carousel">
 
-    <div class="about-box">
-      <%= image_tag "pain_rasta_1.jpg", height: '320', width: '520' %>
-      <h3 class="text-center mt-2">Wonderful islands around the world</h2>
-        <p class="text-center">
-          MySland offers you exclusive private islands in exclusive places like the Caribbean, the French Riviera and the Italian coastline. You can book for a single weekend or for the whole summer.
-        </p>
+  <ol class="carousel-indicators">
+    <li data-target="#devCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#devCarousel" data-slide-to="1"></li>
+    <li data-target="#devCarousel" data-slide-to="2"></li>
+    <li data-target="#devCarousel" data-slide-to="3"></li>
+    <li data-target="#devCarousel" data-slide-to="4"></li>
+
+  </ol>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <%= image_tag("Capa_Video_banner.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "First slide") %>
+
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="font-60">DevPassport Stamps™</h1>
+          <p class="font-22">
+            DevPassort is the most important developer's test platform according to Gartner's Magic Quadrant - Innovative Solutions 2020
+          </p>
+          <%= link_to "Be Protagonist", "#", class: "btn btn-gradient" %>
+        </div>
+      </div>
     </div>
 
-    <div class="about-box">
-      <%= image_tag "pain_girl_1.jpg", height: '320', width: '520' %>
-      <h3 class="text-center mt-2">Privacy and a unique experience</h2>
-        <p class="text-center">
-          You'll have the entire island for yourself. MySland also offers concierge services so you don't have to worry about anything: transportation, supplies and staffing are all handled for you.
-        </p>
-    </div>
-  </div>
-</div>
+    <div class="carousel-item">
+      <%= image_tag("casal_luzes.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Second slide") %>
 
-<div class="container mt-5">
-  <div class="cards">
-
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'neon_ballon.jpg' %>)">
-      Back-end
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="font-60">Nubank MoonShoot Stamp™</h1>
+          <p class="font-22">
+            Apply for Nubank stamp and be expert in the most technologies of the world!
+          </p>
+          <%= link_to "Accept the Challenge", "#", class: "btn btn-gradient" %>
+        </div>
+      </div>
     </div>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'mirror.jpg' %>)">
-      Front-end
+    <div class="carousel-item">
+      <%= image_tag("pcd.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
+
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="font-60">Shopify Rubicon Stamp™</h1>
+          <p class="font-22">
+            The Shopify test covereg all the back-end technologies
+          </p>
+          <%= link_to "Lead the Future", "#", class: "btn btn-gradient" %>
+        </div>
+      </div>
     </div>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'keyboard.jpg' %>)">
-      Full-stack
+    <div class="carousel-item">
+      <%= image_tag("ancient_devs.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
+
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="font-60">AWS Higher Stamp™</h1>
+          <p class="font-22">
+            Apply for AWS stamp and be expert in Node JS, C-Sharp & Python!
+          </p>
+          <%= link_to "Reach the Top", "#", class: "btn btn-gradient" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <%= image_tag("3bwomen.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
+
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="font-60">Magalu Brave Stamp™</h1>
+          <p class="font-22">
+            Apply for Nubank stamp and be expert in the most technologies of the world!
+          </p>
+          <%= link_to "Accept the Challenge", "#", class: "btn btn-gradient" %>
+        </div>
+      </div>
     </div>
 
   </div>
-</div>
 
-<!-- <div class="card-product">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="card-product-infos">
-    <h2>Product name</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div> -->
+    <a class="carousel-control-prev" href="#devCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
 
-<h2 class="text-center mt-4">How it works</h2>
+    <a class="carousel-control-next" href="#devCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 
-<div class="cards_undraw">
-  <div class="card_undraw">
-    <%= image_tag "undraw_dashboard_nklg.png" %>
-    <h4>Filter down to your perfect fit</h4>
-    <p>Personalize your search with filters—like price range or a pool—to get exactly what you want.</p>
   </div>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_code_review_l1q9.png" %>
-    <h4>Dig into the details</h4>
-    <p>Check out the photos. Then, read guest reviews from past reservations to learn what it’s like in person.</p>
-  </div>
+    <div class="visas">
+     <h2>Companies that are using our services!</h2>
+    </div>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_coding_6mjf.png" %>
-    <h4>Book with peace of mind</h4>
-    <p>We keep your info safe and follow global security standards to process your payments.</p>
-  </div>
+      <div class="cards-visa">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'mercado-livre-2.png' %>)">
+        </div>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_flutter_dev_wvqj.png" %>
-    <h4>Arrive and enjoy!</h4>
-    <p>Your host is only a message away if you have any questions. They can also offer local tips and advice.</p>
-  </div>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'magalu-logo.png' %>)">
+        </div>
 
-  <div class="card_undraw">
-    <%= image_tag "undraw_winners_ao2o.png" %>
-    <h4>Arrive and enjoy!</h4>
-    <p>Your host is only a message away if you have any questions. They can also offer local tips and advice.</p>
-  </div>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'shopify-logo.png' %>)">
+        </div>
+      </div>
 
-</div>
+      <div class="d-flex justify-content-center mt-4">
+        <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
+      </div>
 
-<div class="d-flex justify-content-around banner" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'success_table.jpg' %>)">
-  <div>
-    <h1>DevPassport</h1>
-    <p>The best way to be approved in the main technologies companies of the world!</p>
-  </div>
-</div>
+      <div class="col-md-12 col-lg-12 vhm no-padding" style="background:url(<%= image_path 'report-candidate.png' %>) 50% 50% no-repeat;background-attachment:fixed;background-size:cover">
+        <div class="evi no-padding text-center mt-5">
+          <h3>We have innovation in our DNA and we have the powerful combination to help you to become a successfull developer!</h3>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around banner">
+        <div>
+          <h1>Success!</h1>
+          <p>Be accept to work in the most companies of the world with one test only!</p>
+        </div>
+      </div>

@@ -1,7 +1,7 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 26px;
 }
 
 // Smallest device
@@ -72,7 +72,6 @@
   padding: 16px;
 }
 
-  // # Cards do landing page Mysland
 .card_undraw img {
   height: 100px;
   width: 100px;
@@ -93,6 +92,7 @@
   padding: 20px;
   border: 1px solid rgb(230,230,230);
   background-size: cover;
+  background: white;
 }
 
 .cards_undraw {
@@ -102,7 +102,8 @@
 }
 
 .card-category {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   height: 180px;
   display: flex;
@@ -115,3 +116,57 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+
+.cards-visa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 26px;
+}
+
+
+
+
+
+
+
+
+.card-visa {
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.card-visa img {
+  height: 100%;
+  width: 400px;
+  object-fit: cover;
+}
+
+.card-visa div {
+  margin-left: 20px;
+}
+
+.card-visa h2 {
+  font-weight: bold;
+  color: $mango;
+}
+
+.card-visa p {
+  line-height: 1.4;
+  font-weight: lighter;
+  opacity: .7;
+}
+
+.card-visa li {
+  line-height: 1.4;
+  font-weight: lighter;
+  line-height: 1.4;
+  opacity: .7;
+}
+
+
+

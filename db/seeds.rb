@@ -19,7 +19,7 @@ Visa.create(title: "Back-End", description: "Test your web applications and data
 Visa.create(title: "Full Stack", description: "Prove you're a complete web developer!")
 
 Test.create(
-  title: "Nubank's React Test",
+  title: "React Test",
   description: "In this test you'll need to implement a Single Page Application using React",
   user: User.where(name: "Nubank").first,
   visa: Visa.where(title: "Front-End").first,
@@ -29,7 +29,7 @@ Test.create(
 )
 
 Test.create(
-  title: "Nubank's Clojure Test",
+  title: "Clojure Test",
   description: "Design your own web application using Clojure",
   user: User.where(name: "Nubank").first,
   visa: Visa.where(title: "Back-End").first,
@@ -39,7 +39,7 @@ Test.create(
 )
 
 Test.create(
-  title: "Stone's Front-End Test - Using Vue.js",
+  title: "Front-End Test - Using Vue.js",
   description: "In this test you'll need to implement a Single Page Application using Vue.js",
   user: User.where(name: "Stone").first,
   visa: Visa.where(title: "Front-End").first,
@@ -49,7 +49,7 @@ Test.create(
 )
 
 Test.create(
-  title: "Stone's Back-End Test - Using Django",
+  title: "Back-End Test - Using Django",
   description: "Code a complete web application using Django and PostgreSQL",
   user: User.where(name: "Stone").first,
   visa: Visa.where(title: "Back-End").first,
@@ -58,7 +58,7 @@ Test.create(
 )
 
 Test.create(
-  title: "Stone's Full Stack Challenge",
+  title: "Full Stack Challenge",
   description: "Implement a complete web application",
   user: User.where(name: "Stone").first,
   visa: Visa.where(title: "Full Stack").first,

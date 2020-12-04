@@ -1,17 +1,21 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: $black;
-  color: white;
+  transition: 0.5s background-color ease;
+}
+
+.navbar-lewagon-white {
+  background: $black;
+
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
-  color: white;
+    color: white;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 50px;
-  color: white;
 }
 
 .nav-item {
@@ -22,4 +26,16 @@
 .nav-link {
   color: white;
   text-decoration: none;
+}
+
+.navbar-home {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  .navbar-wagon-link {
+    color: white;
+    font-weight: bold;
+  }
 }

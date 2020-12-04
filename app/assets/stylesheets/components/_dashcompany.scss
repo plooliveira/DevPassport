@@ -1,0 +1,32 @@
+.dash-dashboard-company {
+  background-color: black;
+  justify-content: space-between;
+  font-family: arial;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  height: 900px;
+
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: #FFC12F;
+  }
+}
+
+.dash-img {
+  width: 200px;
+  height: 150px;
+}
+
+.btn-dash {
+  text-decoration: none;
+  border-radius: 10px;
+  background-color:rgba(0,0,0,1);
+  color: #BEE3DB;
+}
