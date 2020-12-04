@@ -1,17 +1,17 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background-color: white;
-  background-color: transparent;
+  background: $black;
   transition: 0.5s background-color ease;
 }
 
 .navbar-lewagon-white {
   background: $black;
-  color: white;
+
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+    color: white;
 }
 
 .navbar-lewagon .navbar-brand img {
