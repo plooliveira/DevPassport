@@ -1,6 +1,7 @@
 .banner-home {
   height: 70vh;
   background-size: cover !important;
+  filter: brightness(50%);
 }
 
 .banner {
@@ -34,10 +35,24 @@
 }
 
 .home-banner {
-  background-image: url('double-flat-pannel.jpg');
+  // background-image: url('sands.jpg');
   background-size: cover;
   height: 100vh;
-  color: #eee;
+  color: #fc;
   text-align: center;
   padding-top: 40vh;
+}
+
+.home-banner h1 {
+  color: #fc8621;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.home-banner p {
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 30px;
 }

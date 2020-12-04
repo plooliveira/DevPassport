@@ -11,12 +11,12 @@ body {
 
 
 // Specific CSS for video home-page
-.video-home-modal {
-  height: 400px;
+.vhm {
+  height: 600px;
   text-align: center;
 }
 
-.video-home-modal a {
+.vhm a {
   font-size: 30px;
   color: #fff;
   text-align: center;
@@ -27,11 +27,30 @@ body {
   padding-right: 0;
 }
 
-.efeito-video-instucional {
+.evi {
   height: 100%;
   background-color: rgba(0,0,0,.47);
 }
 
-.video-home-modal {
+.vhm h3 {
   text-align: center;
+  height: 100%;
+  background-color: rgba(0,0,0,.47);
+}
+
+.inner-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  padding: 100px 100px 100px 100px;
+  background: #fff;
+  text-align: center;
+}
+
+.visas {
+  margin-top: 300px;
+  text-align: center;
+  font-size: 100px;
+  padding: 50px;
 }
