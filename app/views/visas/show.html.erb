@@ -1,15 +1,22 @@
-<h1>
-  These are the <%= @visa.title %> tests
-</h1>
-  <%= link_to "Back", visas_path %>
+<div class="container">
+  <h1 class="text-center">
+    These are the <%= @visa.title %> tests
+  </h1>
 
   <% @visa.tests.each do |test| %>
-    <h2><%= test.title %></h2>
-    <ul>
-      <li>Author: <%= test.user.name  %></li>
-      <li>Description: <%= test.description %></li>
-      <li>Seniority: <%= test.seniority %></li>
-      <li>Price: <%= test.price %></li>
-        <%= link_to "Comprar", stamp_create_path(user: current_user, test: test), method: :post, class:"btn btn-primary" %>
-    </ul>
+    <div class="card-visa">
+
+      <img src="https://source.unsplash.com/random" alt="">
+      <div>
+        <h2><%= test.title %></h2>
+        <ul>
+          <li>Author: <%= test.user.name  %></li>
+          <li>Description: <%= test.description %></li>
+          <li>Seniority: <%= test.seniority %></li>
+          <li>Price: <%= test.price %></li>
+            <%= link_to "Comprar", stamp_create_path(user: current_user, test: test), method: :post, class:"btn btn-primary" %>
+        </ul>
+      </div>
+    </div>
   <% end %>
+</div>

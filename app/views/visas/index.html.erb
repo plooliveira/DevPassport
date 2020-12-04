@@ -7,12 +7,16 @@
     <div class="card-visa">
 
       <img src="https://source.unsplash.com/random" alt="">
-      <h2>
-        <%= link_to visa.title, visa_path(visa) %>
-      </h2>
-      <p>
-        <%= visa.description %>
-      </p>
+
+      <div>
+        <h2>
+          <%= link_to visa.title, visa_path(visa) %>
+        </h2>
+        <p>
+          <%= visa.description %>
+        </p>
+      </div>
     </div>
+
   <% end %>
 </div>

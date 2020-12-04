@@ -123,27 +123,23 @@
 
 
 
-
-
-
 .card-visa {
   overflow: hidden;
-  height: 120px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 400px;
   display: flex;
   align-items: center;
+  margin: 10px;
+  width: 100%;
 }
 
 .card-visa img {
   height: 100%;
-  width: 120px;
+  width: 400px;
   object-fit: cover;
 }
 
 .card-visa h2 {
-  font-size: 16px;
   font-weight: bold;
-  margin: 0;
 }
 
 .card-visa p {
