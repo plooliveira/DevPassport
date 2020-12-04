@@ -1,7 +1,9 @@
 <!-- se status = 3 -->
 <!-- mostrar avaliação pending -->
-<%if @stamp.status < 4%>
+<%if @stamp.status < 3%>
 <%= render  "stamp_view1" %>
+<%else%>
+<%= render  "stamp_view2" %>
 <%end%>
 <!-- se status = 4 -->
 <!-- mostrar resultado da avaliação // feedback // tela com parabéns lalala -->

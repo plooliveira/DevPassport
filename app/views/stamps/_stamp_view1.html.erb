@@ -4,7 +4,7 @@
       <div class="stamp-head-img w-100 mb-4"></div>
 
       <h4>
-        <%=@stamp.test.title%>
+        <%=@stamp.test.title%> aqui é o <%=@stamp.status%>
       </h4>
       <%if @stamp.status >= 2 %>
       <div class="stamp-due-date">
@@ -14,7 +14,7 @@
       <div class="stamp-actions">
         <p><%= link_to "Start Test", start_test_path, method: "post", class: "btn btn-primary btn-rounded"%></p>
         <%if @stamp.status == 2 %>
-        <p> <%= link_to  "Finish Test",'', class: "btn btn-danger btn-rounded" %></p>
+        <p> <%= link_to  "Finish Test", finish_test_path, method: "post", class: "btn btn-danger btn-rounded" %></p>
         <p> <%= link_to  "Open Your Test", @stamp.test.link, class: "btn btn-info btn-rounded" %></p>
         <%elsif @stamp.status < 2%>
         <p> <%= link_to  "Finish Test", '', class: "btn btn-secondary disabled btn-rounded" %></p>
