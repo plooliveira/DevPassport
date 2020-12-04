@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  background-color: $black;
+  color: white;
+}
+
+h1 {
+  letter-spacing: 0.03em;
+}
+
+a:hover {
+  text-decoration: none;
+}
