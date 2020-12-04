@@ -15,9 +15,13 @@
 
 body {
   background-color: $black;
+  color: white;
 }
 
 h1 {
   letter-spacing: 0.1em;
 }
 
+a:hover {
+  text-decoration: none;
+}
