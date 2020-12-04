@@ -35,7 +35,8 @@
 }
 
 .home-banner {
-  // background-image: url('sands.jpg');
+  background-image: url('tunel.jpg');
+  filter: brightness(60%);
   background-size: cover;
   height: 100vh;
   color: #fc;
@@ -44,6 +45,7 @@
 }
 
 .home-banner h1 {
+  margin-top: 250px;
   color: #fc8621;
   font-size: 100px;
   font-weight: bold;

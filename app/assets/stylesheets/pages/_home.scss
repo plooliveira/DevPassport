@@ -17,7 +17,7 @@ body {
 }
 
 .vhm a {
-  font-size: 30px;
+  font-size: 60px;
   color: #fff;
   text-align: center;
 }
@@ -32,8 +32,12 @@ body {
   background-color: rgba(0,0,0,.47);
 }
 
-.vhm h3 {
+.evi h3 {
   text-align: center;
+  align-items: center;
+  font-size: 60px;
+  padding: 100px 100px 100px 100px;
+  display: flex;
   height: 100%;
   background-color: rgba(0,0,0,.47);
 }
@@ -50,6 +54,7 @@ body {
 
 .visas {
   margin-top: 300px;
+  align-items: center;
   text-align: center;
   font-size: 100px;
   padding: 50px;
