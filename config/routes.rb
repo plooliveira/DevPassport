@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get     '/visas/',              to: "visas#index"
   get     '/visas/:id',           to: "visas#show",           as: "visa"
+
   get     '/stamps/',             to: "stamps#index"
   post    '/stamps/',             to: "stamps#create",        as: "stamp_create"
   get     '/stamps/:id/payment',  to: "stamps#payment",       as: "payment"

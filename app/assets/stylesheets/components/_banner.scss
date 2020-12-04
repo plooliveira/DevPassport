@@ -1,21 +1,23 @@
 .banner-home {
   height: 70vh;
   background-size: cover !important;
+  filter: brightness(50%);
 }
 
 .banner {
   color: white;
   text-align: left;
-  height: 600px;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  height: 100vh;
   background-size: cover !important;
+  background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 32px;
   margin-top: 0px;
 }
 .banner h1 {
+  color: white;
   font-size: 50px;
   font-weight: 900;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
@@ -23,11 +25,34 @@
 .banner p {
   font-size: 25px;
   font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
+  color: white;
+  opacity: 0.8;
   margin-bottom: 30px;
 }
 
 .banner-main {
   background-position: center;
+}
+
+.home-banner {
+  // background-image: url('sands.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: #fc;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.home-banner h1 {
+  color: #fc8621;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.home-banner p {
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 30px;
 }

@@ -1,4 +1,56 @@
 // Specific CSS for your home-page
-.about-box {
-  object-fit: cover;
+body {
+  background-color: black;
+
+  h1, h2, h3, p {
+    color: white;
+    margin: 0 0 10px;
+    font-family: Roboto,Arial;
+  }
+}
+
+
+// Specific CSS for video home-page
+.vhm {
+  height: 600px;
+  text-align: center;
+}
+
+.vhm a {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.evi {
+  height: 100%;
+  background-color: rgba(0,0,0,.47);
+}
+
+.vhm h3 {
+  text-align: center;
+  height: 100%;
+  background-color: rgba(0,0,0,.47);
+}
+
+.inner-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  padding: 100px 100px 100px 100px;
+  background: #fff;
+  text-align: center;
+}
+
+.visas {
+  margin-top: 300px;
+  text-align: center;
+  font-size: 100px;
+  padding: 50px;
 }
