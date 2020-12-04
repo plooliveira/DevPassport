@@ -1,4 +1,57 @@
-.main-area{
+.stamp-main-area{
   background-color: $dark-gray;
   height: 700px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.stamp-head-img{
+  background-image: url('https://149351115.v2.pressablecdn.com/wp-content/uploads/2020/02/iStock-1163542789-945x630.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.stamp-border-left{
+  
+}
+
+.stamp-main-area .btn{
+  border-radius: 40px;
+  width: 200px;
+}
+
+.stamp-actions{
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.stamp-actions .btn-primary{
+  color: $dark-gray;
+}
+
+.stamp-instructions{
+  color: $light-gray;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.icon-instructions{
+    text-align: center;
+  margin: 0 auto;
+}
+
+.stamp-main-area ol {
+  padding: 5px;
+}
+
+.stamp-info h4{
+  color: $light-gray;
+  text-align: center;
+}
+
+.stamp-due-date{
+  color: $light-gray;
+  text-align: center;
 }
