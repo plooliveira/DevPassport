@@ -1,6 +1,6 @@
-<div class="container" style="width: 900px;">
 
-  <img src="https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2019/01/11142058/programador-front-end-1024x579.jpg" alt="">
+<div class="container">
+  <img src=" https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2019/01/11142058/programador-front-end-1024x579.jpg" alt="">
 
   <h1 class="mt-5">This is your stamp</h1>
 
@@ -21,21 +21,15 @@
     When you click Start, you will have 7 calendar days to complete the test. A link to the GitHub repository where the test is will be opened and you must fork it. Follow the instructions in the readme to complete it. Let's code!
   </p>
 
-  <p><%= link_to  "Open Test", "#{@stamp.test.link}", class: 'btn btn-info'%></p>
 
-  <br>
-  <br>
-  <br>
+  <p><%= @stamp.status %></p>
 
   <%if @stamp.status < 2%>
   <%= link_to "Click here to start your test", start_test_path, method: "post", class: "btn btn-primary"%>
   <%else%>
   <%= link_to  "Finish test", '#', class: 'btn btn-danger' %>
-
-
   <%end%>
   <!-- mudar status de 1 para 2 -->
-  <p>You have until <%= 7.days.from_now.strftime("%Y-%m-%d") %> to finish the project! </p>
   <!-- se status = 2 -->
 
   <!-- mostrar aqui formulario para test_answer -->
@@ -43,11 +37,20 @@
   <!-- mostrar data limite para terminar o teste -->
   <!-- mudar status para 3 -->
   <%if @stamp.status == 2 %>
-  <p>
-    Teste: <a href="<%= @stamp.test.link%>" target="blank">Click here to open your test</a>
-  </p>
+  <div class="">
+    <p>You have until <%= 7.days.from_now.strftime("%Y-%m-%d") %> to finish the project! </p>
+    <p>
+      Teste: <a href="<%= @stamp.test.link%>" target="blank">Click here to open your test</a>
+    </p>
+  </div>
   <%end%>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 

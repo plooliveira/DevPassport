@@ -24,6 +24,7 @@ class StampsController < ApplicationController
     @stamp.status = 1
     @stamp.save
     redirect_to stamp_path(@stamp)
+    
   end
 
   def show

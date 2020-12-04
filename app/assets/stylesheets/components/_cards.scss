@@ -117,8 +117,56 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+
 .cards-visa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 26px;
 }
+
+
+
+
+
+
+
+
+.card-visa {
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.card-visa img {
+  height: 100%;
+  width: 400px;
+  object-fit: cover;
+}
+
+.card-visa div {
+  margin-left: 20px;
+}
+
+.card-visa h2 {
+  font-weight: bold;
+  color: $mango;
+}
+
+.card-visa p {
+  line-height: 1.4;
+  font-weight: lighter;
+  opacity: .7;
+}
+
+.card-visa li {
+  line-height: 1.4;
+  font-weight: lighter;
+  line-height: 1.4;
+  opacity: .7;
+}
+
+
+
