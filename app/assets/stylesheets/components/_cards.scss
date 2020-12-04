@@ -138,14 +138,28 @@
   object-fit: cover;
 }
 
+.card-visa div {
+  margin-left: 20px;
+}
+
 .card-visa h2 {
   font-weight: bold;
+  color: $mango;
 }
 
 .card-visa p {
-  font-size: 12px;
+  line-height: 1.4;
+  font-weight: lighter;
+  opacity: .7;
+}
+
+.card-visa li {
+  line-height: 1.4;
+  font-weight: lighter;
   line-height: 1.4;
   opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
 }
+
+
+
+
