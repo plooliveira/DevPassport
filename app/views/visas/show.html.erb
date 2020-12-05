@@ -4,8 +4,8 @@
   </h1>
 
   <% @visa.tests.each do |test| %>
-    <div class="card-visa">
 
+    <div class="card-test bg-dark">
       <img src="https://source.unsplash.com/random" alt="">
       <div>
         <h2><%= test.title %></h2>
@@ -19,4 +19,24 @@
       </div>
     </div>
   <% end %>
+
+  <!-- <div class="card-trip">
+    <#%= image_tag("keyb-banner.jpg", style: 'object-fit: cover') %>
+    <div class="card-trip-infos">
+      <div>
+        <h2><#%= test.title %></h2>
+        <ul>
+          <li>Author: <#%= test.user.name  %></li>
+          <li>Description: <#%= test.description %></li>
+          <li>Seniority: <#%= test.seniority %></li>
+          <#%= link_to "Comprar", stamp_create_path(user: current_user, test: test), method: :post, class:"btn btn-primary" %>
+        </ul>
+      </div>
+      <h2 class="card-trip-pricing"><#%= test.price %></h2>
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+    </div>
+  </div>
+
 </div>
+ -->
+

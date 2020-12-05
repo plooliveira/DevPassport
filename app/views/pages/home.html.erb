@@ -1,10 +1,13 @@
 
  <div class="d-flex justify-content-around home-banner">
-  <div>
+  <div class="w-100 justify-content-center">
     <h1>DevPassport</h1>
     <p>
       <span id="banner-typed-text"></span>
     </p>
+    <div class="justify-content-end">
+      <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
+    </div>
   </div>
 </div>
 
@@ -25,10 +28,10 @@
       <%= image_tag("Capa_Video_banner.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "First slide") %>
 
       <div class="container">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="font-60">DevPassport Stamps™</h1>
-          <p class="font-22">
-            DevPassort is the most important developer's test platform according to Gartner's Magic Quadrant - Innovative Solutions 2020
+        <div class="carousel-caption d-none d-md-block font-carousel">
+          <h1>DevPassport Stamps™</h1>
+          <p>
+            DevPassport stamps is the most trustfull developer's test platform according to Gartner's Magic Quadrant - Innovative Solutions 2020
           </p>
           <%= link_to "Be Protagonist", "#", class: "btn btn-gradient" %>
         </div>
@@ -39,10 +42,10 @@
       <%= image_tag("casal_luzes.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Second slide") %>
 
       <div class="container">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="font-60">Nubank MoonShoot Stamp™</h1>
-          <p class="font-22">
-            Apply for Nubank stamp and be expert in the most technologies of the world!
+        <div class="carousel-caption d-none d-md-block font-carousel">
+          <h1>Nubank MoonShoot Stamp™</h1>
+          <p>
+            Apply for the DevPassport Front-end stamp and become one of the most qualified candidates for the Nubank technical assessment...
           </p>
           <%= link_to "Accept the Challenge", "#", class: "btn btn-gradient" %>
         </div>
@@ -53,10 +56,10 @@
       <%= image_tag("pcd.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
 
       <div class="container">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="font-60">Shopify Rubicon Stamp™</h1>
-          <p class="font-22">
-            The Shopify test covereg all the back-end technologies
+        <div class="carousel-caption d-none d-md-block font-carousel">
+          <h1>Shopify Rubicon Stamp™</h1>
+          <p>
+            The Shopify Developer's stamp allows you to go straight to technical interview in 89% of the biggest companies on the planet!
           </p>
           <%= link_to "Lead the Future", "#", class: "btn btn-gradient" %>
         </div>
@@ -64,13 +67,13 @@
     </div>
 
     <div class="carousel-item">
-      <%= image_tag("ancient_devs.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
+      <%= image_tag("girl_server.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
 
       <div class="container">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="font-60">AWS Higher Stamp™</h1>
-          <p class="font-22">
-            Apply for AWS stamp and be expert in Node JS, C-Sharp & Python!
+        <div class="carousel-caption d-none d-md-block font-carousel">
+          <h1>Stone High Profile Stamp™</h1>
+          <p>
+            Considered as one of the most critical and complex developer's assessment processes.  DevPassport Stone stamp sealed you to go straight to Soft skills test!
           </p>
           <%= link_to "Reach the Top", "#", class: "btn btn-gradient" %>
         </div>
@@ -81,10 +84,10 @@
       <%= image_tag("3bwomen.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Third slide") %>
 
       <div class="container">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="font-60">Magalu Brave Stamp™</h1>
-          <p class="font-22">
-            Apply for Nubank stamp and be expert in the most technologies of the world!
+        <div class="carousel-caption d-none d-md-block font-carousel">
+          <h1>Le Wagon Brave Coding Stamp™</h1>
+          <p>
+            Learn about the best practices of innovative coding skills!
           </p>
           <%= link_to "Accept the Challenge", "#", class: "btn btn-gradient" %>
         </div>
@@ -106,33 +109,39 @@
   </div>
 
     <div class="visas">
-     <h2>Companies that are using our services!</h2>
+     <h2>Companies that <strong>trust</strong> in our Devs Stamps processes!</h2>
     </div>
 
       <div class="cards-visa">
+
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'stone.png' %>)">
+        </div>
+
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'logo-nubank-roxo-256.png' %>)">
+        </div>
+
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'lewagon.png' %>)">
+        </div>
+
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'shopify-logo-hd-1.png' %>)">
+        </div>
+
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'mercado-livre-2.png' %>)">
         </div>
 
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'magalu-logo.png' %>)">
-        </div>
-
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(<%= image_path 'shopify-logo.png' %>)">
-        </div>
       </div>
 
-      <div class="d-flex justify-content-center mt-4">
-        <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
-      </div>
+
 
       <div class="col-md-12 col-lg-12 vhm no-padding" style="background:url(<%= image_path 'report-candidate.png' %>) 50% 50% no-repeat;background-attachment:fixed;background-size:cover">
         <div class="evi no-padding text-center mt-5">
-          <h3>We have innovation in our DNA and we have the powerful combination to help you to become a successfull developer!</h3>
+          <h3>Raising the hiring bar for software developers while simultaneously eliminating bias, is the key to unlocking a world of even more skilled developers to accelerate the world's innovation!</h3>
         </div>
       </div>
 
-      <div class="d-flex justify-content-around banner">
-        <div>
+      <div class="d-flex justify-content-around home-success-banner">
+        <div class="home-success-font">
           <h1>Success!</h1>
-          <p>Be accept to work in the most companies of the world with one test only!</p>
+          <p>Be accepted in the biggest technology companies of the world with DevPassport's Stamps!</p>
         </div>
       </div>

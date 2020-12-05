@@ -1,5 +1,5 @@
 class StampsController < ApplicationController
-  before_action :set_stamp, only: [:payment, :show, :check_payment, :start_test]
+  before_action :set_stamp, only: [:payment, :show, :check_payment, :start_test, :finish_test]
   skip_before_action :verify_authenticity_token, only: [:check_payment]
 
   def create
@@ -33,6 +33,13 @@ class StampsController < ApplicationController
   def start_test
     @stamp.status = 2
     @stamp.save
+    redirect_to stamp_path(@stamp)
+  end
+
+  def finish_test
+    @stamp.status = 3
+    @stamp.save
+    puts "oiii"
     redirect_to stamp_path(@stamp)
   end
 

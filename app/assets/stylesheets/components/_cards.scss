@@ -1,4 +1,4 @@
-.cards {
+  .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 26px;
@@ -115,29 +115,30 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 30px;
 }
-
 
 .cards-visa {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
 .card-visa {
   overflow: hidden;
-  height: 400px;
+  height: 200px;
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 30px 0px;
   width: 100%;
 }
 
 .card-visa img {
   height: 100%;
-  width: 400px;
+  width: 200px;
   object-fit: cover;
 }
+
 
 .card-visa div {
   margin-left: 20px;
@@ -148,18 +149,84 @@
   color: $mango;
 }
 
-.card-visa p {
+
+
+
+
+
+
+.card-test {
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.card-test img {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+}
+
+.card-test div {
+  margin-left: 20px;
+}
+
+.card-test h2 {
+  font-weight: bold;
+  color: $mango;
+}
+
+.card-test p {
   line-height: 1.4;
   font-weight: lighter;
+}
+
+.card-test li {
+  line-height: 1.4;
+  font-weight: lighter;
+  line-height: 1.4;
   opacity: .7;
 }
 
-.card-visa li {
-  line-height: 1.4;
-  font-weight: lighter;
-  line-height: 1.4;
-  opacity: .7;
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
 
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
 
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  color: black;
+}
+
+.card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
