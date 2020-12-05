@@ -29,5 +29,9 @@ class StampPolicy < ApplicationPolicy
   def start_test?
     record.user == user
   end
+
+  def finish_test?
+    record.user == user
+  end
   
 end

@@ -1,0 +1,74 @@
+.stamp-main-area{
+  margin-top: 80px;
+  background-color: $dark-gray;
+  height: 700px;
+  border-radius: 10px;
+}
+
+.stamp-head-img{
+  background-image: url('https://149351115.v2.pressablecdn.com/wp-content/uploads/2020/02/iStock-1163542789-945x630.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.stamp-waiting-img{
+  background-image: url('https://i.pinimg.com/originals/b2/10/bb/b210bb101dbf8b80953f6577406eacf5.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 200px;
+  margin: 0 auto;
+  
+}
+
+.stamp-border-left{
+  
+}
+
+.stamp-main-area .btn{
+  border-radius: 40px;
+  width: 220px;
+}
+
+.stamp-actions{
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.stamp-actions .btn-primary{
+  color: $dark-gray;
+}
+
+.stamp-actions .btn {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 15px 40px;
+}
+
+.stamp-instructions{
+  color: $light-gray;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.icon-instructions{
+    text-align: center;
+  margin: 0 auto;
+}
+
+.stamp-main-area ol {
+  padding: 5px;
+}
+
+.stamp-info h4{
+  color: $light-gray;
+  text-align: center;
+}
+
+.stamp-due-date{
+  color: $light-gray;
+  text-align: center;
+}

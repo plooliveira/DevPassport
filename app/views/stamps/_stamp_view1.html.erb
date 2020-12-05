@@ -1,0 +1,65 @@
+<div class="container stamp-main-area">
+  <div class="row">
+    <div class="col-5 p-0 stamp-info">
+      <div class="stamp-head-img w-100 mb-4"></div>
+
+      <h4>
+        <%=@stamp.test.title%> aqui é o <%=@stamp.status%>
+      </h4>
+      <%if @stamp.status >= 2 %>
+      <div class="stamp-due-date">
+        <p>You have until <%= 7.days.from_now.strftime("%Y-%m-%d") %> to finish the project! </p>
+      </div>
+      <%end%>
+      <div class="stamp-actions">
+        <p><%= link_to "Start Test", start_test_path, method: "post", class: "btn btn-primary btn-rounded"%></p>
+        <%if @stamp.status == 2 %>
+        <p> <%= link_to  "Finish Test", finish_test_path, method: "post", class: "btn btn-danger btn-rounded" %></p>
+        <p> <%= link_to  "Open Your Test", @stamp.test.link, class: "btn btn-info btn-rounded" %></p>
+        <%elsif @stamp.status < 2%>
+        <p> <%= link_to  "Finish Test", '', class: "btn btn-secondary disabled btn-rounded" %></p>
+        <p> <%= link_to  "Open Yout Test", '', class: "btn btn-secondary disabled btn-rounded" %></p>
+
+        <%end%>
+      </div>
+
+
+
+      <!-- mudar status de 1 para 2 -->
+      <!-- se status = 2 -->
+
+      <!-- mostrar aqui formulario para test_answer -->
+      <!-- mostrar submit button -->
+      <!-- mostrar data limite para terminar o teste -->
+      <!-- mudar status para 3 -->
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="col-7 stamp-border-left">
+      <div class="stamp-instructions w-75">
+        <h2>Instructions:</h2>
+        <ol>
+          <li>When you click Start, you will have 7 calendar days to complete the test. A link to the GitHub repository where the test is will be opened and you must fork it. </li>
+          <br>
+          <div class="icon-instructions">
+            <img src="https://img.icons8.com/wired/64/FFFFFF/code-fork.png" />
+          </div>
+          <br>
+          <li>Follow the instructions in the readme to complete it. </li>
+          <br>
+          <div class="icon-instructions">
+            <i class="fab fa-readme fa-4x"></i>
+          </div>
+          <br>
+          <li>Put your headphone and do your best! When you done, click in Tinish Test</li>
+          <br>
+          <div class="icon-instructions">
+            <i class="fas fa-headphones fa-4x"></i>
+          </div>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
