@@ -19,9 +19,23 @@ body {
 }
 
 h1 {
-  letter-spacing: 0.03em;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
 }
 
 a:hover {
   text-decoration: none;
+  color: $mango;
+}
+
+a {
+  color: white;
+}
+
+p {
+  opacity: .8;
+  font-weight: lighter;
 }
