@@ -3,66 +3,79 @@
 
     <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img rounded-circle" %>
 
-  <div class="">
-
-    <%= image_tag "OVERVIEW.png" %>
-  </div>
-<br>
-
-<div class="card-deck">
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
-  </div>
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
-  </div>
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
-  </div>
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
-  </div>
-</div>
-    <br>
-    <h1>All the tests your company:</h1>
-    <br>
 
   <div class="col-sm-6">
-   <% @tests.each do |test| %>
+    <%= image_tag "Overview.png" %>
+  </div>
+  <br>
+  <br>
 
-    <h2>
-      <%= test.title %>
-      <%= test.seniority %>
-    </h2>
-      <p>
-        <%= test.description %>
-      </p>
-   </div>
-  <% end %>
+   <div class="col-sm-6">
+    <%= image_tag "Quarter Hires.png" %>
+  </div>
 
-    <button class="btn-dash">
-      <%= link_to "Create New Test", new_test_path %>
-    </button>
+<br>
+<br>
 
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card-deck">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Allan Paladino</h5>
+            <p class="card-text">"Clojure Test" - Dez/2020</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Walter Santos</h5>
+            <p class="card-text">"React" - Nov/2020</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Paulo Oliveira</h5>
+            <p class="card-text">"React" - Nov/2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+  <h1>All the tests your company:</h1>
+
+
+  <div class="row">
+    <% @tests.each do |test| %>
+      <div class="col-sm-6">
+        <h2>
+          <%= test.title %>
+        </h2>
+        <h3>
+          <%= test.seniority %>
+        </h3>
+        <p>
+          <%= test.description %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="btn btn-primary btn-rounded">
+    <%= link_to "Create New Test", new_test_path %>
+  </div>
 </div>
 
 
