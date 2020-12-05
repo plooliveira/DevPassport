@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="text-center"><%= @user.name %>'s DevPassport</h1>
+
+  <div class="profile-block">
+    <h2>Stamps Granted</h2>
+
+    <% @user.stamps.each do |stamp| %>
+      <div >
+        <h3>
+          <%= stamp.test.visa.title %>
+        </h3>
+        <p>
+          <%= stamp.test.title %> from <%= stamp.test.user.name %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="profile-block">
+    <h2>Contact Information</h2>
+    <div >
+      <p>Email: @user.email</p>
+    </div>
+  </div>
+</div>
+

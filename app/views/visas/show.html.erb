@@ -5,20 +5,28 @@
 
   <% @visa.tests.each do |test| %>
 
-    <div class="card-test bg-dark">
-      <img src="https://source.unsplash.com/random" alt="">
-      <div>
-        <h2><%= test.title %></h2>
-        <ul>
-          <li>Author: <%= test.user.name  %></li>
-          <li>Description: <%= test.description %></li>
-          <li>Seniority: <%= test.seniority %></li>
-          <li>Price: <%= test.price %></li>
-            <%= link_to "Comprar", stamp_create_path(user: current_user, test: test), method: :post, class:"btn btn-primary" %>
-        </ul>
+    <div class="card-test d-flex bg-dark">
+
+      <%= cl_image_tag test.user.avatar.key, class: "", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+
+      <div class="flex-grow-1">
+        <h2>
+          <%= test.user.name  %> - <%= test.title %>
+        </h2>
+        <p>
+          <%= test.description %>
+        </p>
       </div>
+
+      <div class="mr-3 details">
+        <p class="">Seniority Level: <%= test.seniority %></p>
+        <p>Price: R$ <%= test.price %>,00 </p>
+        <%= link_to "Comprar", stamp_create_path(user: current_user, test: test), method: :post, class:"btn btn-primary btn-small" %>
+      </div>
+
     </div>
   <% end %>
+</div>
 
   <!-- <div class="card-trip">
     <#%= image_tag("keyb-banner.jpg", style: 'object-fit: cover') %>

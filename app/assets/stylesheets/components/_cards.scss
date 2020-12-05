@@ -118,6 +118,10 @@
   margin: 30px;
 }
 
+
+
+
+
 .cards-visa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -144,13 +148,6 @@
   margin-left: 20px;
 }
 
-.card-visa h2 {
-  font-weight: bold;
-  color: $mango;
-}
-
-
-
 
 
 
@@ -174,22 +171,23 @@
   margin-left: 20px;
 }
 
-.card-test h2 {
-  font-weight: bold;
-  color: $mango;
+
+
+.card-test .details {
+  font-size: 14px;
+  text-align: right;
+  color: $light-gray;
 }
 
-.card-test p {
-  line-height: 1.4;
-  font-weight: lighter;
-}
 
-.card-test li {
-  line-height: 1.4;
-  font-weight: lighter;
-  line-height: 1.4;
-  opacity: .7;
-}
+
+
+
+
+
+
+
+
 
 .card-trip {
   overflow: hidden;
@@ -230,3 +228,4 @@
   top: -20px;
   width: 40px;
 }
+
