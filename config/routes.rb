@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get     '/company_dashboard/',  to: "dashboard#company"
   get     '/user_dashboard/',     to: "dashboard#user"
+  get     '/profile/:id',          to: "dashboard#profile"
 
   get     '/visas/',              to: "visas#index"
   get     '/visas/:id',           to: "visas#show",           as: "visa"
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
   post    '/stamps/:id/',         to: "stamps#check_payment", as: "check_payment"
   get     '/stamps/:id/',         to: "stamps#show",          as: "stamp"
   post    '/stamps/:id/start',    to: "stamps#start_test",    as: "start_test"
-  post    '/stamps/:id/finish',    to: "stamps#finish_test",    as: "finish_test"
+  post    '/stamps/:id/finish',   to: "stamps#finish_test",    as: "finish_test"
 
 
 end
