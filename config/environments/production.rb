@@ -55,6 +55,7 @@ Rails.application.configure do
   config.log_tags = [ :request_id ]
   config.serve_static_assets = true
   config.assets.compile = true
+  config.active_storage.service = :cloudinary
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
