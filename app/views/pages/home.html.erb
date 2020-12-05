@@ -1,10 +1,13 @@
 
  <div class="d-flex justify-content-around home-banner">
-  <div>
+  <div class="w-100 justify-content-center">
     <h1>DevPassport</h1>
     <p>
       <span id="banner-typed-text"></span>
     </p>
+    <div class="justify-content-end">
+      <%= link_to "View all our visas", visas_path, class: "btn btn-flat" %>
+    </div>
   </div>
 </div>
 
@@ -128,9 +131,7 @@
 
       </div>
 
-      <div class="d-flex justify-content-center" style="margin-bottom: 300px">
-        <%= link_to "View all the visas", visas_path, class: "btn btn-gradient" %>
-      </div>
+
 
       <div class="col-md-12 col-lg-12 vhm no-padding" style="background:url(<%= image_path 'report-candidate.png' %>) 50% 50% no-repeat;background-attachment:fixed;background-size:cover">
         <div class="evi no-padding text-center mt-5">

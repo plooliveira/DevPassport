@@ -1,12 +1,15 @@
+<% images = ["front-end.png", "back-end.jpg", "full-stack.png"] %>
+
 
 <div class="container">
   <h1 class="text-center">Our Visas for You</h1>
 
   <% @visas.each do |visa| %>
 
-    <div class="card-visa">
+    <div class="card-visa bg-dark">
 
-      <img src="https://source.unsplash.com/random" alt="">
+
+      <%= image_tag images[visa.id-1] %>
 
       <div>
         <h2>
