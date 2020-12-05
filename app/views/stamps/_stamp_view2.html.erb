@@ -45,17 +45,28 @@
     <div class="col-7 stamp-border-left">
       <div class="stamp-instructions w-75">
         <h2>Feedback:</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <p>
+          <%=@stamp.reviewer_feedback%>
+        </p>
         <br>
         <p> <%= link_to  "Link for Code Review", @stamp.test.link, class: "btn btn-info btn-rounded", id: "btn-code-review" %></p>
         <br>
         <br>
         <br>
-        <p class="center-text">Share</p>
+        <br>
+        <br>
+        <h5 class="center-text">Share</h5>
+        <br>
         <div class="icon-feedback d-flex justify-content-around w-75 mx-auto">
+          <%= link_to '#' do%>
           <i class="fab fa-linkedin fa-3x"></i>
+          <%end%>
+          <%= link_to '#' do%>
           <i class="fab fa-facebook-square fa-3x"></i>
+          <%end%>
+          <%= link_to '#' do%>
           <i class="fab fa-twitter-square fa-3x"></i>
+          <%end%>
         </div>
       </div>
     </div>
