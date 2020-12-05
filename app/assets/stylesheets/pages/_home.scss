@@ -1,23 +1,33 @@
 // Specific CSS for your home-page
 body {
   background-color: black;
-
-  h1, h2, h3, p {
-    color: white;
-    margin: 0 0 10px;
-    font-family: Roboto,Arial;
-  }
 }
 
+.font-carousel {
+  color: white;
+  margin: 0 0 10px;
+  font-family: Roboto,Arial;
+}
+
+.font-carousel h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.font-carousel p {
+  font-size: 30px;
+  font-weight: lighter;
+}
 
 // Specific CSS for video home-page
 .vhm {
   height: 600px;
   text-align: center;
+  margin-top: 100px;
 }
 
 .vhm a {
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
   text-align: center;
 }
@@ -35,7 +45,7 @@ body {
 .evi h3 {
   text-align: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 50px;
   padding: 100px 100px 100px 100px;
   display: flex;
   height: 100%;
@@ -53,9 +63,17 @@ body {
 }
 
 .visas {
-  margin-top: 300px;
+  margin-top: 100px;
   align-items: center;
   text-align: center;
   font-size: 100px;
+  padding: 50px;
+}
+
+.visas h2 {
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
   padding: 50px;
 }

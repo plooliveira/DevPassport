@@ -18,7 +18,7 @@
 }
 .banner h1 {
   color: white;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
@@ -36,7 +36,7 @@
 
 .home-banner {
   background-image: url('tunel.jpg');
-  filter: brightness(60%);
+  filter: brightness(70%);
   background-size: cover;
   height: 100vh;
   color: #fc;
@@ -47,14 +47,41 @@
 .home-banner h1 {
   margin-top: 250px;
   color: #fc8621;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 .home-banner p {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: lighter;
   color: white;
   opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.home-success-banner {
+  margin-top: 200px;
+  background-image: url('hand_shake.jpg');
+  filter: brightness(40%);
+  background-size: cover;
+  height: 70vh;
+  color: #fc;
+  text-align: left;
+  padding-top: 40vh;
+  margin-bottom: 200px;
+}
+
+.home-success-font {
+  color: white;
+}
+
+.home-success-font h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.home-success-font p {
+  font-size: 25px;
+  font-weight: bold;
   margin-bottom: 30px;
 }
