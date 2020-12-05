@@ -18,13 +18,14 @@ class StampsController < ApplicationController
   end
 
   def payment
+    redirect_to check_payment_path
   end
 
   def check_payment
     @stamp.status = 1
     @stamp.save
     redirect_to stamp_path(@stamp)
-    
+
   end
 
   def show

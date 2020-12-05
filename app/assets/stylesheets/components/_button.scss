@@ -1,12 +1,17 @@
 
 .btn {
   padding: 15px 50px;
+  border-radius: 50px;
+}
+
+.btn-small {
+  padding: 10px 30px;
+  font-size: 14px;
 }
 
 .btn-home-slide {
   text-decoration: none;
   color: #fff;
-  border-radius: 25px;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 50px;
@@ -31,7 +36,6 @@
 .btn-flat {
   color: white;
   padding: 8px 24px;
-  border-radius: 4px;
   background: $mango;
   transition: background 0.3s ease;
 }

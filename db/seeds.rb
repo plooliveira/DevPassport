@@ -18,51 +18,51 @@ Visa.create(title: "Front-End", description: "From basic stuff (HTML, CSS and JS
 Visa.create(title: "Back-End", description: "Test your web applications and database skills, using Rails, Django and other frameworks")
 Visa.create(title: "Full Stack", description: "Prove you're a complete web developer!")
 
-Test.create(
-  title: "React Test",
-  description: "In this test you'll need to implement a Single Page Application using React",
-  user: User.where(name: "Nubank").first,
-  visa: Visa.where(title: "Front-End").first,
-  seniority: "Junior Developer",
-  price: 100,
-  link: "https://github.com/hurbcom/challenge-charlie/fork"
-)
+# Test.create(
+#   title: "React Test",
+#   description: "In this test you'll need to implement a Single Page Application using React",
+#   user: User.where(name: "Nubank").first,
+#   visa: Visa.where(title: "Front-End").first,
+#   seniority: "Junior Developer",
+#   price: 100,
+#   link: "https://github.com/hurbcom/challenge-charlie/fork"
+# )
 
-Test.create(
-  title: "Clojure Test",
-  description: "Design your own web application using Clojure",
-  user: User.where(name: "Nubank").first,
-  visa: Visa.where(title: "Back-End").first,
-  seniority: "Junior Developer",
-  price: 100,
-  link: "https://github.com/hurbcom/challenge-charlie/fork"
-)
+# Test.create(
+#   title: "Clojure Test",
+#   description: "Design your own web application using Clojure",
+#   user: User.where(name: "Nubank").first,
+#   visa: Visa.where(title: "Back-End").first,
+#   seniority: "Junior Developer",
+#   price: 100,
+#   link: "https://github.com/hurbcom/challenge-charlie/fork"
+# )
 
-Test.create(
-  title: "Front-End Test - Using Vue.js",
-  description: "In this test you'll need to implement a Single Page Application using Vue.js",
-  user: User.where(name: "Stone").first,
-  visa: Visa.where(title: "Front-End").first,
-  seniority: "Senior Developer",
-  price: 100,
-  link: "https://github.com/hurbcom/challenge-charlie/fork"
-)
+# Test.create(
+#   title: "Front-End Test - Using Vue.js",
+#   description: "In this test you'll need to implement a Single Page Application using Vue.js",
+#   user: User.where(name: "Stone").first,
+#   visa: Visa.where(title: "Front-End").first,
+#   seniority: "Senior Developer",
+#   price: 100,
+#   link: "https://github.com/hurbcom/challenge-charlie/fork"
+# )
 
-Test.create(
-  title: "Back-End Test - Using Django",
-  description: "Code a complete web application using Django and PostgreSQL",
-  user: User.where(name: "Stone").first,
-  visa: Visa.where(title: "Back-End").first,
-  seniority: "Senior Developer",
-  price: 100,
-)
+# Test.create(
+#   title: "Back-End Test - Using Django",
+#   description: "Code a complete web application using Django and PostgreSQL",
+#   user: User.where(name: "Stone").first,
+#   visa: Visa.where(title: "Back-End").first,
+#   seniority: "Senior Developer",
+#   price: 100,
+# )
 
-Test.create(
-  title: "Full Stack Challenge",
-  description: "Implement a complete web application",
-  user: User.where(name: "Stone").first,
-  visa: Visa.where(title: "Full Stack").first,
-  seniority: "Senior Developer",
-  price: 100,
-  link: "https://github.com/hurbcom/challenge-charlie/fork"
-)
+# Test.create(
+#   title: "Full Stack Challenge",
+#   description: "Implement a complete web application",
+#   user: User.where(name: "Stone").first,
+#   visa: Visa.where(title: "Full Stack").first,
+#   seniority: "Senior Developer",
+#   price: 100,
+#   link: "https://github.com/hurbcom/challenge-charlie/fork"
+# )
