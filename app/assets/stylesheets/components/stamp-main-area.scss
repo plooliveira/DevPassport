@@ -18,9 +18,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  height: 200px;
-  margin: 0 auto;
-  
+  height: 400px;
 }
 
 .stamp-border-left{
@@ -67,8 +65,22 @@
   color: $light-gray;
   text-align: center;
 }
+.stamp-info h5{
+  color: $light-gray;
+  text-align: center;
+}
 
 .stamp-due-date{
   color: $light-gray;
   text-align: center;
+}
+.center-text{
+  text-align: center;
+  font-size: x-large;
+}
+#btn-code-review{
+  width: 260px;
+}
+.icon-feedback{
+  color: $mango;
 }
