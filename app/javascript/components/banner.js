@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 
 const loadDynamicBannerText = () => {
   new Typed('#banner-typed-text', {
-    strings: ["The best way to be approved in the most of technologies companies of the world!", "Accept the Challenge!", "Be Protagonist!", "Reach the Top!", "Lead the Future!"],
+    strings: ["Imagine a world where you can accelerate your company's innovation!", "We brought together software developers, hiring managers and recruiting professionals from leading companies to innovate the hiring processes world!", "Lead the Future!", "Accept the challenge!"],
     typeSpeed: 80,
     loop: true
   });

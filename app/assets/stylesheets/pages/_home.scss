@@ -7,6 +7,7 @@ body {
   color: white;
   margin: 0 0 10px;
   font-family: Roboto,Arial;
+  filter: brightness(80%);
 }
 
 .font-carousel h1 {
@@ -50,6 +51,7 @@ body {
   display: flex;
   height: 100%;
   background-color: rgba(0,0,0,.47);
+  filter: brightness(80%);
 }
 
 .inner-wrapper {
@@ -76,4 +78,5 @@ body {
   text-align: center;
   font-size: 50px;
   padding: 50px;
+  filter: brightness(80%);
 }

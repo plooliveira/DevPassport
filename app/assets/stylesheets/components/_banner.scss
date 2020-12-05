@@ -62,17 +62,17 @@
 .home-success-banner {
   margin-top: 200px;
   background-image: url('hand_shake.jpg');
-  filter: brightness(40%);
+  filter: brightness(60%);
   background-size: cover;
   height: 70vh;
   color: #fc;
-  text-align: left;
+  text-align: center;
   padding-top: 40vh;
   margin-bottom: 200px;
 }
 
 .home-success-font {
-  color: white;
+  color: #fc8621;
 }
 
 .home-success-font h1 {
@@ -81,7 +81,7 @@
 }
 
 .home-success-font p {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 30px;
 }
