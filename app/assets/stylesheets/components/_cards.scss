@@ -118,10 +118,6 @@
   margin: 30px;
 }
 
-
-
-
-
 .cards-visa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -143,14 +139,9 @@
   object-fit: cover;
 }
 
-
 .card-visa div {
   margin-left: 20px;
 }
-
-
-
-
 
 .card-test {
   overflow: hidden;
@@ -171,23 +162,11 @@
   margin-left: 20px;
 }
 
-
-
 .card-test .details {
   font-size: 14px;
   text-align: right;
   color: $light-gray;
 }
-
-
-
-
-
-
-
-
-
-
 
 .card-trip {
   overflow: hidden;
@@ -196,7 +175,7 @@
 }
 
 .card-trip > img {
-  height: 200px;
+  height: 600px;
   width: 100%;
   object-fit: cover;
 }
@@ -229,3 +208,6 @@
   width: 40px;
 }
 
+.card-trip-pricing {
+
+}

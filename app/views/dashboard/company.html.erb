@@ -1,21 +1,58 @@
 
+<div class="card-trip">
+
+  <div class="d-flex ">
+    <div class="col-sm-6">
+      <%= image_tag "Overview.png" %>
+    </div>
+
+     <div class="col-sm-6">
+      <%= image_tag "Quarter Hires.png" %>
+    </div>
+  </div>
+
+  <%#= image_tag "double-flat-pannel.jpg" %>
+  <!-- <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" /> -->
+  <div class="card-trip-infos">
+    <div>
+      <h2>Nubank</h2>
+      <p>Technologies applied!</p>
+    </div>
+
+    <h2 class="card-trip-pricing">£99.99</h2>
+    <%= image_tag "logo-nubank-roxo-256.png", class: "card-trip-user avatar-bordered" %>
+
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/cveneziani", class: "card-trip-user avatar-large", alt: "avatar" %>
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "card-trip-user avatar-large", alt: "avatar-large" %>
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "card-trip-user avatar-large", alt: "avatar-bordered" %>
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/krokrob", class: "card-trip-user avatar-large", alt: "avatar-square" %>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <div class="dash-dashboard-company">
 
-    <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img rounded-circle" %>
+  <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img rounded-circle" %>
 
-
+<div class="d-flex">
   <div class="col-sm-6">
     <%= image_tag "Overview.png" %>
   </div>
-  <br>
-  <br>
 
    <div class="col-sm-6">
     <%= image_tag "Quarter Hires.png" %>
   </div>
-
-<br>
-<br>
+</div>
 
   <div class="row">
     <div class="col-sm-8">
@@ -53,9 +90,7 @@
   <br>
   <br>
 
-
   <h1>All the tests your company:</h1>
-
 
   <div class="row">
     <% @tests.each do |test| %>
@@ -77,5 +112,3 @@
     <%= link_to "Create New Test", new_test_path %>
   </div>
 </div>
-
-
