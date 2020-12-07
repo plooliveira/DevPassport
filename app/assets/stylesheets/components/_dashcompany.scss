@@ -30,3 +30,15 @@
   background-color:rgba(0,0,0,1);
   color: #BEE3DB;
 }
+
+.card-dash-box {
+  overflow: hidden;
+  background: gray;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-dash-box-chart {
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
