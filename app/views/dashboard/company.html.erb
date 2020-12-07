@@ -1,68 +1,77 @@
-
 <div class="dash-dashboard-company">
 
-    <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img rounded-circle" %>
+    <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img ml-3" %>
 
   <div class="">
-
-    <%= image_tag "OVERVIEW.png" %>
+    <center><%= image_tag "Overview.png" %></center>
   </div>
-<br>
+  <br>
+  <br>
 
-<div class="card-deck">
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
+   <div class="">
+    <center><%= image_tag "Quarter Hires.png" %></center>
+  </div>
+  <br>
+  <br>
+      <div class="card-deck d-flex justify-content-between mx-4">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Allan Paladino</h5>
+            <p class="card-text">"Clojure Test" - Dez/2020</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Walter Santos</h5>
+            <p class="card-text">"React" - Nov/2020</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Paulo Oliveira</h5>
+            <p class="card-text">"React" - Nov/2020</p>
+          </div>
+        </div>
+      </div>
+  <br>
+  <br>
+  <br>
+
+  <center><h1>All the tests your company:</h1></center>
+
+  <br>
+  <br>
+
+  <div class="row">
+    <% @tests.each do |test| %>
+      <div class="col-sm-6">
+        <h2>
+          <%= test.title %>
+        </h2>
+        <h4>
+          <%= test.seniority %>
+        </h4>
+        <p>
+          <%= test.description %>
+        </p>
+      </div>
+    <% end %>
   </div>
 
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
-  </div>
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
-  </div>
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Aprovedd 2020</div>
-    <div class="card-body">
-      <h5 class="card-title">Carlos Santos</h5>
-      <p class="card-text">"Agora posso realmente comprovar minhas habilidades!" - Fev/2020</p>
-    </div>
+  <br>
+  <div class="btn btn-primary btn-dash btn-sm">
+  <%= link_to "Create New Test", new_test_path %>
   </div>
 </div>
-    <br>
-    <h1>All the tests your company:</h1>
-    <br>
 
-  <div class="col-sm-6">
-   <% @tests.each do |test| %>
-
-    <h2>
-      <%= test.title %>
-      <%= test.seniority %>
-    </h2>
-      <p>
-        <%= test.description %>
-      </p>
-   </div>
-  <% end %>
-
-    <button class="btn-dash">
-      <%= link_to "Create New Test", new_test_path %>
-    </button>
-
-</div>
 
 
