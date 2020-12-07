@@ -1,25 +1,19 @@
-
 <div class="dash-dashboard-company">
 
-    <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img rounded-circle" %>
+    <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img ml-3" %>
 
-
-  <div class="col-sm-6">
-    <%= image_tag "Overview.png" %>
+  <div class="">
+    <center><%= image_tag "Overview.png" %></center>
   </div>
   <br>
   <br>
 
-   <div class="col-sm-6">
-    <%= image_tag "Quarter Hires.png" %>
+   <div class="">
+    <center><%= image_tag "Quarter Hires.png" %></center>
   </div>
-
-<br>
-<br>
-
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="card-deck">
+  <br>
+  <br>
+      <div class="card-deck d-flex justify-content-between mx-4">
 
         <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
           <div class="card-header">Latest Hires
@@ -48,14 +42,14 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
   <br>
   <br>
+  <br>
 
+  <center><h1>All the tests your company:</h1></center>
 
-  <h1>All the tests your company:</h1>
-
+  <br>
+  <br>
 
   <div class="row">
     <% @tests.each do |test| %>
@@ -63,9 +57,9 @@
         <h2>
           <%= test.title %>
         </h2>
-        <h3>
+        <h4>
           <%= test.seniority %>
-        </h3>
+        </h4>
         <p>
           <%= test.description %>
         </p>
@@ -73,9 +67,11 @@
     <% end %>
   </div>
 
-  <div class="btn btn-primary btn-rounded">
-    <%= link_to "Create New Test", new_test_path %>
+  <br>
+  <div class="btn btn-primary btn-dash btn-sm">
+  <%= link_to "Create New Test", new_test_path %>
   </div>
 </div>
+
 
 

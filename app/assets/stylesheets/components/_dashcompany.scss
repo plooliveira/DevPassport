@@ -1,11 +1,8 @@
 .dash-dashboard-company {
   background-color: black;
-  justify-content: center;
-  margin: 0 auto;
-  text-align: center;
   color: white;
   text-decoration: none;
-  height: 1600px;
+  height: 1650px;
 
 
   h1 {
@@ -30,7 +27,10 @@
 
 .btn-dash {
   text-decoration: none;
-  border-radius: 10px;
-  background-color:rgba(0,0,0,1);
-  color: #BEE3DB;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color:#FFC12F;
+  color: white;
 }
+
