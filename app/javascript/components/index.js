@@ -15,3 +15,5 @@ const addEvent = (button) => {
 };
 
 clickableButton.forEach(addEvent);
+
+export { clickableButton };
