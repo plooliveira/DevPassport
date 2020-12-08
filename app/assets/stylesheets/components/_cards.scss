@@ -125,6 +125,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .card-visa {
