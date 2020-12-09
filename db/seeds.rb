@@ -22,7 +22,7 @@ Visa.create(title: "Data Analytics", description: "Prove you're a true data scie
 Test.create(
   title: "React",
   description: "In this test you'll need to implement a Single Page Application using React.",
-  user: User.find(1),
+  user: User.find(5),
   visa: Visa.where(title: "Front-End").first,
   seniority: "Junior Developer",
   price: 99,
@@ -32,7 +32,7 @@ Test.create(
 Test.create(
   title: "Vue.js",
   description: "Game project! A simple player vs monster game to practice the foundation of Vue.js.",
-  user: User.find(2),
+  user: User.find(6),
   visa: Visa.where(title: "Front-End").first,
   seniority: "Senior Developer",
   price: 149,
@@ -43,7 +43,7 @@ Test.create(
 Test.create(
   title: "Svelte",
   description: "Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.",
-  user: User.find(3),
+  user: User.find(7),
   visa: Visa.where(title: "Front-End").first,
   seniority: "Senior Developer",
   price: 199,
@@ -64,7 +64,7 @@ Test.create(
 Test.create(
   title: "Vanilla",
   description: "No frameworks! Just the ol HTML, CSS and Javascript.",
-  user: User.find(5),
+  user: User.find(3),
   visa: Visa.where(title: "Front-End").first,
   seniority: "Junior Developer",
   price: 99,
