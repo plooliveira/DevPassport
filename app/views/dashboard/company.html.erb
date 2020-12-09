@@ -7,34 +7,52 @@
   </div>
 </div>
 
-<div class="container mt-5 mb-5">
 
+<div class="d-flex">
   <div class="row">
-    <div class="d-flex col-6" style="width: 500px"  >
-      <%#= bar_chart(a: 3, b: 7, c: 9) %>
+    <div class="col-sm-6">
       <%= image_tag "Overview.png" %>
     </div>
 
-    <div class="d-flex col-6" style="width: 500px"  >
-      <%#= pie_chart(a: 3, b: 7) %>
-      <%= image_tag "Quarter Hires.png" %>
+    <div class="col-sm-6">
+     <%= image_tag "Quarter Hires.png" %>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card-deck">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Allan Paladino</h5>
+            <p class="card-text">"Clojure Test" - Dez/2020</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Walter Santos</h5>
+            <p class="card-text">"React" - Nov/2020</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Latest Hires
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Paulo Oliveira</h5>
+            <p class="card-text">"React" - Nov/2020</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  <div class="dash-dashboard-company mt-5">
-
-    <h1>Latest Hires</h1>
-
-    <h2>Allan Paladino</h5>
-    <p>"Clojure Test" - Dez/2020</p>
-
-    <h2>Walter Santos</h5>
-    <p>"React" - Nov/2020</p>
-
-    <h2>Paulo Oliveira</h5>
-    <p>"React" - Nov/2020</p>
-  </div>
+  <br>
+  <br>
 
   <h1>All the tests your company:</h1>
 
