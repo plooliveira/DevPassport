@@ -1,15 +1,15 @@
-<% images = ["front-end.png", "back-end.jpg", "full-stack.png"] %>
+<% images = ["front-end.png", "back-end.jpg", "full-stack.png", "mobile.png", "data.jpg"] %>
 
 
 <div class="container">
   <h1 class="text-center">Our Visas for You</h1>
 
-  <% @visas.each do |visa| %>
+  <% @visas.each_with_index do |visa, i| %>
 
     <div class="card-visa bg-dark">
 
 
-      <%= image_tag images[visa.id-1] %>
+      <%= image_tag images[i] %>
 
       <div>
         <h2>
