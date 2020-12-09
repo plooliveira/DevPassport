@@ -40,4 +40,10 @@ document.addEventListener('turbolinks:load', () => {
   initUpdateNavbarOnScroll();
   loadDynamicBannerText();
   clickableButton();
+
+  Chartkick.eachChart( function(chart) {
+    chart.redraw();
+  });
 });
+
+
