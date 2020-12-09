@@ -54,7 +54,7 @@ Test.create(
 Test.create(
   title: "AngularJS",
   description: "In this test you'll need to implement a Single Page Application using AngularJS.",
-  user: find(4),
+  user: User.find(4),
   visa: Visa.where(title: "Front-End").first,
   seniority: "Senior Developer",
   price: 149,
