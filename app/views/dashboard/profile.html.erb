@@ -1,26 +1,57 @@
 <div class="container">
-  <h1 class="text-center"><%= @user.name %>'s DevPassport</h1>
 
-  <div class="profile-block">
-    <h2>Stamps Granted</h2>
 
-    <% @user.stamps.each do |stamp| %>
-      <div >
-        <h3>
-          <%= stamp.test.visa.title %>
-        </h3>
-        <p>
-          <%= stamp.test.title %> from <%= stamp.test.user.name %>
-        </p>
-      </div>
-    <% end %>
+  <div class="avatar-large" style="background-image: url(<%= cl_image_path @user.avatar.key %>);">
   </div>
 
+
+  <h1 class="text-center"><%= @user.name %>'s DevPassport</h1>
+
+
+  <h2>Stamps Granted</h2>
+
   <div class="profile-block">
-    <h2>Contact Information</h2>
-    <div >
-      <p>Email: @user.email</p>
+    <div class="row">
+      <% @user.stamps.each do |stamp| %>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <%= stamp.test.visa.title %>
+              </h5>
+              <p class="card-text">With
+                <%= stamp.test.title %> from <%= stamp.test.user.name %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
+
+<div class="container">
+  <h2>Contact Information</h2>
+  <div class="profile-block">
+    <div class="card p-2">
+      <p>Email: <strong><%= @user.email %></strong></p>
+    </div>
+    <div class="card p-2">
+      <p>Telephone: <strong>+55 11 98276 2220</strong></p>
+    </div>
+    <div class="card p-2">
+      <p>LinkedIn: <strong><a href="#"><%= @user.name %></a></strong></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
