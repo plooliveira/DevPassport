@@ -1,4 +1,15 @@
 .profile-block {
   background-color: $dark-gray;
-  margin: 20px;
+  margin: 0px;
+  width: 100%;
+  padding: 5px;
+}
+
+.profile-block .card {
+  background-color: $dim-gray;
+}
+
+
+.container .avatar-large {
+  margin: 0 auto;
 }

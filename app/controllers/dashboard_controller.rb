@@ -1,4 +1,5 @@
 class DashboardController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :profile ]
 
   def user
     @user = current_user
