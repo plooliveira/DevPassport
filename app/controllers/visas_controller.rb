@@ -7,9 +7,7 @@ class VisasController < ApplicationController
   end
 
   def show
-
   end
-
 
   private
 
