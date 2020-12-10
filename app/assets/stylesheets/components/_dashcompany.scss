@@ -2,21 +2,18 @@
   background-color: black;
   color: white;
   text-decoration: none;
-  height: 1650px;
-
-
+  height: 300px;
   h1 {
     font-size: 48px;
     font-weight: bold;
-  }
-
-  p {
     color: white;
   }
-
-  h3 {
+  h2 {
     font-size: 30px;
     color: #FFC12F;
+  }
+  p {
+    color: white;
   }
 }
 
@@ -34,3 +31,15 @@
   color: white;
 }
 
+
+.card-dash-box {
+  overflow: hidden;
+  background: gray;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-dash-box-chart {
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}

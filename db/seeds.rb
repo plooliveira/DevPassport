@@ -72,10 +72,6 @@ Test.create(
 )
 
 
-
-
-
-
 Test.create(
   title: "Clojure Test",
   description: "Design your own web application using Clojure",

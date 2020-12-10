@@ -117,10 +117,6 @@
   padding: 0px 50px;
 }
 
-
-
-
-
 .cards-visa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -144,14 +140,9 @@
   object-fit: cover;
 }
 
-
 .card-visa div {
   margin-left: 20px;
 }
-
-
-
-
 
 .card-test {
   overflow: hidden;
@@ -172,23 +163,11 @@
   margin-left: 20px;
 }
 
-
-
 .card-test .details {
   font-size: 14px;
   text-align: right;
   color: $light-gray;
 }
-
-
-
-
-
-
-
-
-
-
 
 .card-trip {
   overflow: hidden;
@@ -197,7 +176,7 @@
 }
 
 .card-trip > img {
-  height: 200px;
+  height: 600px;
   width: 100%;
   object-fit: cover;
 }
@@ -230,3 +209,41 @@
   width: 40px;
 }
 
+.card-trip-pricing {
+
+}
+
+.clickable {
+  padding: 40px;
+  width: 180px;
+  border: 1px solid #dedede;
+  color: #a0a0a0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.clickable i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.clickable:hover i {
+  color: #52ACF4;
+}
+
+.clickable.active {
+  color: inherit;
+  border-color: inherit;
+}
+
+.clickable.active i {
+  color: #52ACF4;
+}
+
+.card-title {
+  color: orange;
+}

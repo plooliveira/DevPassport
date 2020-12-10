@@ -1,77 +1,158 @@
-<div class="dash-dashboard-company">
 
-    <%= image_tag "logo-nubank-roxo-256.png", class: "dash-img ml-3" %>
+<div class="col-12 no-padding mb-5">
+  <%= image_tag("nubank_banner-8.jpg", class: "d-block w-100 banner-home", style: 'object-fit: cover', alt: "Nubank") %>
+</div>
 
-  <div class="">
-    <center><%= image_tag "Overview.png" %></center>
+<div class="container">
+
+  <div class="col-sm-12 text-center mt-5 mb-5">
+    <h3>Developer Test & Hiring Process Performance Tracking:</h3>
   </div>
-  <br>
-  <br>
 
-   <div class="">
-    <center><%= image_tag "Quarter Hires.png" %></center>
-  </div>
-  <br>
-  <br>
-      <div class="card-deck d-flex justify-content-between mx-4">
 
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-          <div class="card-header">Latest Hires
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Allan Paladino</h5>
-            <p class="card-text">"Clojure Test" - Dez/2020</p>
-          </div>
-        </div>
-
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-          <div class="card-header">Latest Hires
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Walter Santos</h5>
-            <p class="card-text">"React" - Nov/2020</p>
-          </div>
-        </div>
-
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-          <div class="card-header">Latest Hires
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Paulo Oliveira</h5>
-            <p class="card-text">"React" - Nov/2020</p>
-          </div>
-        </div>
-      </div>
-  <br>
-  <br>
-  <br>
-
-  <center><h1>All the tests your company:</h1></center>
-
-  <br>
-  <br>
-
+<div class="d-flex">
   <div class="row">
-    <% @tests.each do |test| %>
-      <div class="col-sm-6">
-        <h2>
-          <%= test.title %>
-        </h2>
-        <h4>
-          <%= test.seniority %>
-        </h4>
-        <p>
-          <%= test.description %>
-        </p>
-      </div>
-    <% end %>
-  </div>
+    <div class="col-sm-6">
+      <%= image_tag "Overview.png" %>
+    </div>
 
-  <br>
-  <div class="btn btn-primary btn-dash btn-sm">
-  <%= link_to "Create New Test", new_test_path %>
+    <div class="col-sm-6 mb-5">
+     <%= image_tag "Quarter Hires.png" %>
+    </div>
   </div>
 </div>
 
+<div class="col-sm-12 text-center mt-5 mb-5">
+  <h3>The latest <strong>DevPassport developers</strong> hired:</h3>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-sm-8 mb-5">
+    <div class="card-deck">
+
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Allan P. Turing</h5>
+          <p class="card-text">"Clojure Test" - Out/2020</p>
+
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Walter S. Jobs</h5>
+          <p class="card-text">"React" - Nov/2020</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Vivian A. Gates</h5>
+          <p class="card-text">"Clojure Test" - Nov/2020</p>
+        </div>
+      </div>
 
 
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Paulo O. Musk</h5>
+          <p class="card-text">"React" - Dez/2020</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 text-center mt-5 mb-5">
+  <h3>All the <strong>Dev Tests</strong> available:</h3>
+</div>
+
+<div class="row mb-5">
+  <% @tests.each do |test| %>
+    <div class="col-sm-6 mb-5">
+      <h2 style="color: orange" align-item: center>
+        <%= test.title %>
+      </h2>
+      <h3>
+        <%= test.seniority %>
+      </h3>
+      <p>
+        <%= test.description %>
+      </p>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<div class="row justify-content-center mt-5">
+  <div class="col-sm-12 text-center">
+    <h3>Choice the <strong>Back-End</strong> test languages:</h3>
+    <div class="d-flex flex-wrap justify-content-center pt-4">
+
+      <div class="clickable">
+        <i class="fab fa-python"></i>
+        <small>Python</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-node"></i>
+        <small>Node js</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-java"></i>
+        <small>Java</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-php"></i>
+        <small>PHP</small>
+      </div>
+      <div class="clickable">
+        <i class="fas fa-server"></i>
+        <small>PostgreSQL</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-github-square"></i>
+        <small>Github</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row justify-content-center mt-5">
+  <div class="col-sm-12 text-center" style="height: 300px">
+    <h3>Choice the <strong>Front-End</strong> test languages:</h3>
+    <div class="d-flex flex-wrap justify-content-center pt-4">
+
+      <div class="clickable">
+        <i class="fab fa-html5"></i>
+        <small>HTML</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-css3-alt"></i>
+        <small>CSS</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-js-square"></i>
+        <small>JavaScript</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-react"></i>
+        <small>React</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-vuejs"></i>
+        <small>Vue js</small>
+      </div>
+      <div class="clickable">
+        <i class="fab fa-angular"></i>
+        <small>Angular</small>
+      </div>
+    </div>
+  </div>
+
+<div class="col-sm-12 text-center" style="height: 200px">
+<div class="btn btn-primary btn-rounded">
+  <%= link_to "Create New Test", new_test_path %>
+</div>
+</div>
