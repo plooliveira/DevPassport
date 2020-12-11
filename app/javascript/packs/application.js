@@ -46,4 +46,3 @@ document.addEventListener('turbolinks:load', () => {
   });
 });
 
-
