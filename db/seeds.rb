@@ -62,7 +62,7 @@ Test.create(
 )
 
 Test.create(
-  title: "Vanilla",
+  title: "Vanilla Framework",
   description: "No frameworks! Just the ol HTML, CSS and Javascript.",
   user: User.find(3),
   visa: Visa.where(title: "Front-End").first,
