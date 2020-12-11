@@ -8,7 +8,7 @@ body {
   margin: 0 0 10px;
 }
 
-.font-carousel h1 {
+.font-carousel h2 {
   font-size: 60px;
   font-weight: 500;
   h1, h2, h3, p {
@@ -17,6 +17,10 @@ body {
 
   }
 
+}
+
+.carousel-caption {
+  padding-bottom: 80px;
 }
 
 .carousel-item {
