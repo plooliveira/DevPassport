@@ -1,5 +1,5 @@
 DevPassport 🛂
-DevPassport is a Ruby on Rails platform where developers create a professional passport to showcase and validate their technical skills.
+DevPassport is a platform where developers create a professional passport to showcase and validate their technical skills.
 
 🚀 Overview
 1. Developers complete live coding sessions, technical tests, and quizzes.
