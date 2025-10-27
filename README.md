@@ -1,5 +1,6 @@
 DevPassport 🛂
-DevPassport is a platform where developers create a professional passport to showcase and validate their technical skills.
+
+A platform where developers create a professional passport to showcase and validate their technical skills.
 
 🚀 Overview
 1. Developers complete live coding sessions, technical tests, and quizzes.
